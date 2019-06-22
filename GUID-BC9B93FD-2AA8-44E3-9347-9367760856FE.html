@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="Data Object Reference-based Loops" name="DC.Title" /><meta content="A data object reference-based processing loop is used to repeat an operation on all objects that are referenced by a specified data object reference." name="abstract" /><meta content="A data object reference-based processing loop is used to repeat an operation on all objects that are referenced by a specified data object reference." name="description" /><meta content="processing loops, data object reference-based, data object reference-based loops" name="DC.subject" /><meta content="processing loops, data object reference-based, data object reference-based loops" name="keywords" /><meta content="GUID-A5679073-E4A1-4FC2-BA62-14C3F9E672AA.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Data Object Reference-based Loops</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Data Object Reference-based Loops</h1>
+<div class="body conbody"><div class="abstract"> 
+	  <span class="shortdesc">A data object reference-based processing loop is used to repeat an operation on all objects that are referenced by a specified data object reference. 
+	 </span>
+ This type of loop is required when the data you need is in an object that is not on the data method’s context path or a direct descendant (child or grandchild object). For example, if you need to access 
+	 <samp class="ph codeph">income</samp> information for an 
+	 <samp class="ph codeph">Applicant</samp>, but the 
+	 <samp class="ph codeph">income</samp> object is not a child or descendant of 
+	 <samp class="ph codeph">Applicant</samp>, you can use a data object reference-based loop to traverse through all 
+	 <samp class="ph codeph">income</samp> objects associated with a data object reference whose context is 
+	 <samp class="ph codeph">income</samp>. 
+  </div>
+ 
+	 <div class="p" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111944">Data object reference-based processing loops must conform to the syntax shown in the following statement: 
+	 <ul class="ul"> 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111945"><samp class="ph codeph">for every &lt;context_path&gt; in &lt;dor_name&gt; do &lt;statement_sequence&gt; endfor</samp> 
+		</li>
+ 
+	 </ul>
+ 
+	 </div>
+ 
+	 <div class="p" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111946">Where: 
+	 <ul class="ul"> 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111947"><samp class="ph codeph">&lt;context_path&gt;</samp> is the context path for the 
+		  <samp class="ph codeph">&lt;dor_name&gt;</samp> data object reference<samp class="ph codeph">.</samp> 
+		</li>
+ 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111948"><samp class="ph codeph">&lt;dor_name&gt;</samp> is the name of a data object reference. 
+		</li>
+ 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111949"><samp class="ph codeph">&lt;statement_sequence&gt;</samp> is a simple or complex statement, conditional statement, object-based processing loop, or data object reference-based processing loop that is executed once for each instance in the 
+		  <samp class="ph codeph">&lt;dor_name&gt;</samp> data object reference. 
+		</li>
+ 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111952">Data methods or fields used must be valid for the active context (see 
+		  <a class="xref" href="GUID-ACB36F11-308D-433C-AB0F-B05180EF9F38.html">Active Context in Loop Statements</a>). 
+		</li>
+ 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111954">If there are multiple statements within 
+		  <samp class="ph codeph">statement_sequence</samp>, each statement prior to the last must end with a semicolon. The comma is optional for the last statement. 
+		</li>
+ 
+	 </ul>
+ 
+	 </div>
+ 
+	 <p class="p" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111955">The following table shows an example of a data method containing a data object reference-based processing loop. 
+	 </p>
+ 
+	 
+<div class="tablenoborder"><table border="1" cellpadding="4" cellspacing="0" class="table" frame="border" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111962" rules="all" summary=""><caption><span class="tablecap">Data Object Reference-based Processing Loop Example (Does not use the provided domain model)</span></caption> 
+		 
+		 
+		<thead align="left" class="thead"> 
+		  <tr class="row"> 
+			 <th class="entry" id="d176800e126" valign="top" width="25%">Item 
+			 </th>
+ 
+			 <th class="entry" id="d176800e129" valign="top" width="75%">Value 
+			 </th>
+ 
+		  </tr>
+ 
+		</thead>
+ 
+		<tbody class="tbody"> 
+		  <tr class="row" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111970"> 
+			 <td class="entry" headers="d176800e126 " valign="top" width="25%">Name 
+			 </td>
+ 
+			 <td class="entry" headers="d176800e129 " valign="top" width="75%">dm_App_WeightedMonthlyIncome 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111974_unique_1"> 
+			 <td class="entry" headers="d176800e126 " valign="top" width="25%">Description 
+			 </td>
+ 
+			 <td class="entry" headers="d176800e129 " valign="top" width="75%">Calculates the weighted sum of monthly income for an applicant, given a stated ownership percentage. 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111978"> 
+			 <td class="entry" headers="d176800e126 " valign="top" width="25%">Context 
+			 </td>
+ 
+			 <td class="entry" headers="d176800e129 " valign="top" width="75%">Application.Applicant 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111982"> 
+			 <td class="entry" headers="d176800e126 " valign="top" width="25%">Result Type 
+			 </td>
+ 
+			 <td class="entry" headers="d176800e129 " valign="top" width="75%">numeric 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111991"> 
+			 <td class="entry" headers="d176800e126 " valign="top" width="25%">Local Variables 
+			 </td>
+ 
+			 <td class="entry" headers="d176800e129 " valign="top" width="75%"> 
+				<pre class="pre codeblock">
+Name            Data Type   Initial Value
+xIncomeSum      numeric     0
+xApplicantRef   string      
+xMonthlyIncome  numeric     0.0
+</pre>
+ 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1111998"> 
+			 <td class="entry" headers="d176800e126 " valign="top" width="25%">Data Object Reference 
+			 </td>
+ 
+			 <td class="entry" headers="d176800e129 " valign="top" width="75%">dor_AllIncomeOwner 
+				<p class="p" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112001">Accesses the Application.Finance.Income.Owner object 
+				</p>
+ 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112003"> 
+			 <td class="entry" headers="d176800e126 " valign="top" width="25%">Data Method 
+			 </td>
+ 
+			 <td class="entry" headers="d176800e129 " valign="top" width="75%">dm_Util_MonthlyAmount 
+				<p class="p" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112006_unique_1">Converts an amount from a given frequency to an amount for a monthly frequency. 
+				</p>
+ 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112008"> 
+			 <td class="entry" headers="d176800e126 " valign="top" width="25%">Expression 
+			 </td>
+ 
+			 <td class="entry" headers="d176800e129 " valign="top" width="75%"> 
+				<samp class="ph codeph">result := 0; // return zero if data is missing or negative</samp> 
+				<pre class="pre codeblock">
+xApplicantRef := Applicant.ApplicantCrossReferenceId;
+for every Application.Finance.Income.Owner in dor_AllIncomeOwner do
+  if (Owner.ApplicantCrossReferenceId = xApplicantRef)   then
+    if ((IncomeAmount &lt;&gt; null) and (Frequency &lt;&gt; null)     then
+      if (IncomeAmount &gt; 0) then
+        xMonthlyIncome := dm_Util_MonthlyAmount         (IncomeAmount, Frequency);
+        if ((xMonthlyIncome &lt;&gt; null) and         (OwnershipPercent &lt;&gt; null) then
+          if ((xMonthlyIncome &gt; 0) and           (OwnershipPercent &gt; 0) and
+          (OwnershipPercent &lt;=100)) then
+            xIncomeSum := xIncomeSum + (xMonthlyIncome
+            * OwnershipPercent / 100);
+          endif
+        endif
+      endif
+    endif
+  endif
+endfor
+Result := xIncomeSum;
+</pre>
+ 
+			 </td>
+ 
+		  </tr>
+ 
+		</tbody>
+ 
+	 </table>
+</div>
+ 
+	 <div class="p" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112032_unique_1">This expression reads as follows: 
+	 <ol class="ol" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__GUID-358E3009-4350-4C5F-8A16-DD49D1CD98B4"> 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112033">Assign 
+		  <samp class="ph codeph">result</samp> an initial value of 
+		  <samp class="ph codeph">0</samp>. 
+		</li>
+ 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112034">Assign the local variable 
+		  <samp class="ph codeph">xApplicantRef</samp> the value contained by 
+		  <samp class="ph codeph">ApplicantCrossReferenceId</samp>. 
+		</li>
+ 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112035">For every 
+		  <samp class="ph codeph">Owner</samp> object in the data object reference 
+		  <samp class="ph codeph">dor_AllIncomeOwner</samp>, if 
+		  <samp class="ph codeph">ApplicantCrossReferenceId</samp> is equal to the local variable 
+		  <samp class="ph codeph">xApplicantRef</samp>, then assign 
+		  <samp class="ph codeph">result</samp> the value 
+		  <samp class="ph codeph">0</samp> (the initial value) plus the following calculated value:
+		  The value produced by the data method 
+		  <samp class="ph codeph">dm_Util_MonthlyAmount</samp> (using the inputs 
+		  <samp class="ph codeph">IncomeAmount</samp> and 
+		  <samp class="ph codeph">Frequency</samp>) multiplied by the stated value of 
+		  <samp class="ph codeph">OwnershipPercent</samp>, and divide that result by 
+		  <samp class="ph codeph">100</samp>. 
+		</li>
+ 
+	 </ol>
+ 
+	 </div>
+ 
+	 <div class="p" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112036">The following keywords are used in this statement: 
+	 <ul class="ul"> 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112037"><samp class="ph codeph">for every</samp> and 
+		  <samp class="ph codeph">endfor</samp> show the beginning and end of the statement and direct the system to repeat the next statement sequence, subject to any constraints that follow. 
+		</li>
+ 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112038"><samp class="ph codeph">do</samp> directs the system to execute the next statement sequence. 
+		</li>
+ 
+		<li class="li" id="GUID-BC9B93FD-2AA8-44E3-9347-9367760856FE__WP1112039"><samp class="ph codeph">if</samp>, 
+		  <samp class="ph codeph">then</samp>, and 
+		  <samp class="ph codeph">endif</samp> show the beginning, middle, and end of the conditional statement. 
+		</li>
+ 
+	 </ul>
+ 
+	 </div>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-A5679073-E4A1-4FC2-BA62-14C3F9E672AA.html" title="Processing loops are instructions that repeat until some condition is met. They allow you to incorporate fields and data methods from non-context domain model objects into your current data method, enabling more powerful data methods to be written.">Processing Loop Statements</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

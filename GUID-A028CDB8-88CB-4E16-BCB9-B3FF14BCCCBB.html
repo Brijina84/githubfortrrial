@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="reference" name="DC.Type" /><meta content="CRA Scoring Model Values" name="DC.Title" /><meta content="CRA scoring model, values, scoring model values, scoring model inquiry parameter values" name="DC.subject" /><meta content="CRA scoring model, values, scoring model values, scoring model inquiry parameter values" name="keywords" /><meta content="GUID-172DAA61-737E-42AA-9AEA-DEECFCC57B00.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>CRA Scoring Model Values</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">CRA Scoring Model Values</h1>
+<div class="body refbody"> 
+	 <div class="section" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-88532B23-3B1A-4466-BC9B-5170D0D566BD_unique_18"> 
+		<div class="p">When requesting a consumer credit report from a CRA, a scoring model can be specified for online credit bureau score 1 and online credit bureau score 2. These values can appear in the following places: 
+		<ul class="ul"> 
+		  <li class="li">The 
+			 <samp class="ph codeph">CRAScoringModel.ModelNumber</samp> attribute in the 
+			 <span class="ph filepath">om_apm_cra_core</span> module in 
+			 <span class="ph">Designer</span>. 
+		  </li>
+ 
+		  <li class="li">The 
+			 <samp class="ph codeph">CRAScoringModelStructure.ModelNumber</samp> attribute in the 
+			 <span class="ph filepath">om_apm_bootstrap</span> module in 
+			 <span class="ph">Designer</span>. 
+		  </li>
+ 
+		  <li class="li"> The 
+			 <span class="keyword wintitle">CRA Configuration &gt; Edit CRA</span> page in the 
+			 <span class="ph" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0E9D1CA3-D6D4-4E62-8199-0D0FC6890434_unique_61">Application Processing Module</span> user interface. 
+		  </li>
+ 
+		</ul>
+ 
+		</div>
+ 
+		<p class="p"> In the Score 1 column, an X denotes a scoring model that is acceptable as score 1 for transactions using the ARM 3.0 model suite. 
+		</p>
+ 
+		<div class="p">
+		
+<div class="tablenoborder"><table border="1" cellpadding="4" cellspacing="0" class="table" frame="border" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3760E702-23FD-42C5-87FA-645156E1920E" rules="all" summary=""><caption><span class="tablecap">Equifax US Scoring Model Values</span></caption><thead align="left" class="thead"> 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-7D27BDE2-579F-4B8F-8CEC-D8313F24C9C6" valign="bottom"> 
+				<th align="left" class="entry" id="d144875e105" valign="bottom" width="16%"> Model Number 
+				</th>
+ 
+				<th class="entry" id="d144875e108" valign="bottom" width="73%"> Label 
+				</th>
+ 
+				<th align="center" class="entry" id="d144875e111" valign="bottom" width="11%"> Score 1 
+				</th>
+ 
+			 </tr>
+</thead>
+ 
+		  <tbody class="tbody"> 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C2814ED7-E6C9-4460-A57E-575B753F1679"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5855853B-C098-43B7-8B82-BBDF89E69393" valign="top" width="16%"> 31* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-6B9BAFF4-3939-4B70-90F9-94C3FF31476F" valign="top" width="73%"> BANKRUPTCY NAVIGATOR INDEX 3.0 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-7E1C109B-ADBC-4B9F-98B5-C831F0372AB0" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-AA65C8D2-CE88-4E50-9B15-0A3F6FF72949"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-90A90850-7E86-4F81-A65F-D32AE53D4B7E" valign="top" width="16%"> 33* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-CBF4C233-2ACD-42EE-A527-1FAF188C3D2C" valign="top" width="73%"> BANKRUPTCY NAVIGATOR INDEX 3.0 Calibrated 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8D91EE7A-0DDD-4C20-A712-D498C60208D5" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-587F4425-82EE-47B0-AD7B-DCF2662BF0EF"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-EAEA88AD-31D2-4830-B134-3D21B25CD80F" valign="top" width="16%"> 32* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4C92EB26-F498-429D-BB22-BA74080053CB" valign="top" width="73%"> BANKRUPTCY NAVIGATOR INDEX 3.0 Including Bankruptcies 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-80C67602-ADAF-4BD5-BE4A-10CF8ACAB22D" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3D9D5BCF-764A-45E0-AD6A-F0F412BDC2B1"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-31F2785A-7792-428F-83F4-90F25967A67D" valign="top" width="16%"> 34* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-313E4328-BA57-47AE-90E8-A7CD6E174E1E" valign="top" width="73%"> BANKRUPTCY NAVIGATOR INDEX 3.0 Including Bankruptcies Calibrated 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-FDC24055-2ADC-4031-8104-082C73D38BC9" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B7AEC1D7-12AB-451E-8828-71A251CCF335" valign="top"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C0C2719E-DEB8-4E25-9174-299BEB018ADB" valign="top" width="16%"> 21 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-333C2FBA-8FF3-45C3-97BE-4BBF2EFAECE9" valign="top" width="73%"> 
+				  <span class="ph">FICO<sup>®</sup></span> Risk Score, Classic (customer number default) 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-73A7AFA5-77AD-4D96-9CDF-AA3FE7FAC5B8" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0363B445-7FBF-4DBF-A3A5-A01F4A959F19"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5F255E49-185F-48CB-BFF3-1F9596C302EA" valign="top" width="16%"> 23* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8EE4BF1D-155D-4031-ACA3-63506F2E6E90" valign="top" width="73%"> 
+				  <span class="ph">FICO<sup>®</sup></span> Risk Score, Classic, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-6767563A-224A-4180-ABCC-FE9BB929B0AC" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-1AA3E1F7-EB31-4468-B587-989861BCBD61"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A9872F52-5223-45A8-9B3D-E7FFF40E55C2" valign="top" width="16%"> 24* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-43C95E64-D132-4555-ACDA-47ED919899E7" valign="top" width="73%"> 
+				  <span class="ph">FICO<sup>®</sup></span> Auto Score, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-EC346DD6-7A86-45F2-A172-3291B07E03E7" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B77D151A-8B2B-4CAF-9ECF-8A0F711F8D07"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0FBCCEE2-3A1B-43EE-9F79-7A6DD6E673FE" valign="top" width="16%"> 3A* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-E50C55D4-FE52-4BF5-97B1-4CE016B2CF6D" valign="top" width="73%"> 
+				  <span class="ph">FICO<sup>®</sup></span> Bankcard Score, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8E5E0F13-B9A4-4A64-BAF1-802121A0292C" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-AD568A59-5620-45AB-AF94-652B28EEE892"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-AE1FF21D-9A27-4D05-ABCA-3286110580F4" valign="top" width="16%"> 3K* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0B4A6FF6-526B-4CA8-A14D-4C4C64796408" valign="top" width="73%"> 
+				  <span class="ph">FICO<sup>®</sup></span>Mortgage Score, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9B291660-18CE-428E-B9DD-5F75224343E5" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5D9C9212-8040-42B9-B199-5791DDCD962D"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C6C1602A-D9F0-46D3-BE13-1979A775E9ED" valign="top" width="16%"> 3G* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-22499AD2-DCED-4C11-88F8-FEA5D305B62B" valign="top" width="73%"> 
+				  <span class="ph">FICO<sup>®</sup></span> Risk Score, Classic, v5 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B91D94D6-1009-46FF-8D5D-C4B37B3B9DA5" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8027E0CF-80D5-44CD-848C-980FE25EDA35"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-219FDB6D-2E4E-48E4-BF3F-9942F2541D8B" valign="top" width="16%"> 3H* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B4001D56-1E48-420C-B265-1AD9B801AE35" valign="top" width="73%"> 
+				  <span class="ph">FICO<sup>®</sup></span> Auto Score, v5 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A8788E5E-9C1F-49E9-A212-4442B371F18E" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A12B70D4-9696-446A-AF28-37FD3C844CBB"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-657DDAD6-48B1-49FB-851A-C0F8D9D730A2" valign="top" width="16%"> 22 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-7284A094-216D-41AE-AFBB-24D10D2A0BE0" valign="top" width="73%"> EDAS (Enhanced Delinquency Alert System) or FACTA EDAS 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-05E72AB8-26FB-4F72-A920-9B57C2F5AD21" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-973E2E56-1CD0-438D-AF9E-F42B9BCC1366"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-1B3EDAFA-C456-4482-8AC6-BE44E1CCE14B" valign="top" width="16%"> 3B* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8E7DF2BD-8EDF-4976-8201-389C5896EDE2" valign="top" width="73%"> FACTA 
+				  <span class="ph">FICO<sup>®</sup></span> Risk Score, Classic, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9821FAFA-B15D-431D-82CC-75FF64A91BDE" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A2F402D8-0AF8-4E89-8A5B-B60B1E30AE41"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A9D9D613-22DF-403E-BBC4-A99CECC9EFF2" valign="top" width="16%"> 3C* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-AEB3981D-8005-4AD5-B24A-86BEE1CC234C" valign="top" width="73%"> FACTA 
+				  <span class="ph">FICO<sup>®</sup></span> Auto Score, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2B813930-45F8-4F58-B49D-F3440F3779C9" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-65BE519D-AD43-401D-B45C-530BEA719287"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-79208977-00DD-47BC-A3FA-722C048441D3" valign="top" width="16%"> 3D* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-52117AD3-CACC-455E-8871-E612A09DC330" valign="top" width="73%"> FACTA 
+				  <span class="ph">FICO<sup>®</sup></span> Bankcard Score, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-7DB51D02-C8ED-439E-8599-11BCF3749D40" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4C127953-E12E-4170-82A4-BEA0FEA4F8BF"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-6EB14FE8-653E-40CC-8B9C-477DDBD8C94F" valign="top" width="16%"> 3L* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-1014F3AE-A540-49DE-8B4D-5548EFDE8611" valign="top" width="73%"> FACTA 
+				  <span class="ph">FICO<sup>®</sup></span> Mortgage Score, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4AEACAD5-6025-4491-85D8-D37C83281143" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-958D8413-6765-4DF0-A460-AA94E6C30F0E"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-740A0482-F264-484B-B647-77A1D51F92E9" valign="top" width="16%"> 3I* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-64088F14-2C22-4B63-8878-C28296E36233" valign="top" width="73%"> FACTA 
+				  <span class="ph">FICO<sup>®</sup></span> Risk Score, Classic, v5 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-03F3A6EA-5322-43EC-BF16-6384AB47E23A" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5598131A-6505-4927-BCE3-ADB96C6CF808"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F9D19608-19D9-4C4F-AADF-A34E0DBD1D61" valign="top" width="16%"> 3J* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F58B745A-8639-4126-B91D-C36A2BF99B59" valign="top" width="73%"> FACTA 
+				  <span class="ph">FICO<sup>®</sup></span> Auto Score, v5 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-83794BC0-8A34-49AD-87FE-B19ED6D10B02" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-1CEDB97A-5FE9-4A8D-B3D9-97DA72852DE3"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C9E5B126-CD3A-4F8D-BEE9-DF457E24A15F" valign="top" width="16%"> 38* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-DA54027A-94DE-4872-ABEF-80F83F7CCC3E" valign="top" width="73%"> FACTA 
+				  <span class="ph">FICO<sup>®</sup></span> Risk Score, NextGen, v2 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F3F0AEAE-E8E0-4E7D-95C5-F4ECFE716852" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-619DB925-6722-4480-A511-A4232097C2B3"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-30B1BCB2-A3DE-4EDF-BA51-D43CEF8CF417" valign="top" width="16%"> 3M* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-42581291-EAD4-4A53-B095-9D7D1F4C3A71" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Credit Capacity Index™ 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-ED27746F-4B6E-4400-BC68-7C5CB517A0BF" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5FD5A9AA-B267-49EA-AA50-15C212D48029"> 
+				<td class="entry" headers="d144875e105 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-90D9CD83-B5EB-4363-B61D-24BBB8F25BA7" valign="top" width="16%"> 30* 
+				</td>
+ 
+				<td class="entry" headers="d144875e108 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A0B3D42E-1325-45B9-9982-46C712D1C545" valign="top" width="73%"> 
+				  <span class="ph">FICO<sup>®</sup></span> Risk Score, NextGen, v2 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e111 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-AD18FDD6-4F7B-476B-95A3-BC8AD18719B9" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+		  </tbody>
+ 
+		</table>
+</div>
+ 
+		</div>
+ 
+		<table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4E669790-7502-4A92-B9B3-17A2EC226BAC"><b>Note</b> Equifax US codes marked with an asterisk are requested using the MD (Model Data) segment, which causes Equifax US to return the score in the MM segment of the ARF data. Codes not marked with an asterisk are requested using the Optional Feature Codes in the IDNT (Fixed Inquiry Format) segment, which causes Equifax US to return the score in the CP (<span class="ph">FICO<sup>®</sup></span> score) segment of the ARF data. 
+		  </div></td></tr></table>
+ 
+		<div class="p">
+		
+<div class="tablenoborder"><table border="1" cellpadding="4" cellspacing="0" class="table" frame="border" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-DBD8632B-0D9A-4B05-AB1A-042270A45AF0" rules="all" summary=""><caption><span class="tablecap">Experian Scoring Model Values</span></caption><thead align="left" class="thead"> 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-75A262F7-990B-45A6-878C-F3DA9079E208" valign="bottom"> 
+				<th align="left" class="entry" id="d144875e461" valign="bottom" width="16%"> Model Number 
+				</th>
+ 
+				<th class="entry" id="d144875e464" valign="bottom" width="73%"> Label 
+				</th>
+ 
+				<th align="center" class="entry" id="d144875e467" valign="bottom" width="11%"> Score 1 
+				</th>
+ 
+			 </tr>
+</thead>
+ 
+		  <tbody class="tbody"> 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4D3C5707-C38E-4236-B8C1-0731F6422472"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2628A443-05F2-40CE-8073-C62A1AF1B1B8" valign="top" width="16%"> 67 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F31B6A36-883F-4D78-8019-4C9859808E80" valign="top" width="73%"> Experian CollectScore 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-266ED45E-6C64-421E-AFB7-A34F60122168" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-6A5149F6-1062-4E49-883A-A5115A0A802D"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-BB125FC8-6CB0-40FC-80B2-97D345D76386" valign="top" width="16%"> 65 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-62D77E5C-03E2-47BA-A4EB-D5224DF60D8A" valign="top" width="73%"> Experian Fraud Shield Score Plus 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9073C763-11E8-4932-8F8E-903D054A9121" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-08178513-5044-4866-8B08-7B5595E4217E"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2719B402-715D-4F9D-8A8B-0A5AA74111F6" valign="top" width="16%"> 47 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-CD0C0B94-739D-45D9-89DD-22931E7407FD" valign="top" width="73%"> Experian National Equivalency 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2E43B558-A03B-4885-BB76-ADFAD5243248" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9E150A48-F315-4966-9611-B44FC6707D49"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A9DBAF63-734D-4DFE-93FB-73E275FCC59A" valign="top" width="16%"> 46 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-704090D7-6D80-41C2-8FBD-427CF1A2F81E" valign="top" width="73%"> Experian National Risk 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-97CD7990-5BA8-480D-B446-88FBECD24578" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-42C352EF-6C6D-46F5-84AA-AF81C7408E66"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-7DA6B4A5-BEC0-4CF3-A59C-231D5CE59AFA" valign="top" width="16%"> 68 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-79BAC2F8-37A8-420D-9B5F-2E8EDAA635A8" valign="top" width="73%"> Experian RecoveryScore Bankcard 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3D209E82-EB14-4772-A8BD-99A540B4D493" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-254E42D9-E15E-46D7-A9FF-D0D8EFB8DD6C"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A86903A0-81A6-4EDD-A2B0-A4F140A7783E" valign="top" width="16%"> 69 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-E842FE07-F08D-4C9A-88D7-2864A51ADFDE" valign="top" width="73%"> Experian RecoveryScore Retail 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-83667D53-C09B-46A8-8BA5-80ED2A7503B2" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-51F503A2-FFFC-4965-9655-CEC5C6005011"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D3F2FF7A-D93F-4E62-B2AF-1C23B8E5043A" valign="top" width="16%"> 61 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-89C7F0F2-9514-4D70-BDB0-4AC4E19B1476" valign="top" width="73%"> Experian TEC (Telecommunications, Energy, Cable) 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-43174B4E-0F78-4D85-A478-05FFAF756BA9" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-46959960-1563-43CF-84F2-365428A5C138"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9FA0A20B-32D8-49F8-AC70-5EC84CF12DF7" valign="top" width="16%"> 45 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3820A3CA-D20B-4254-876A-85C3E8D502FE" valign="top" width="73%"> Experian/MDS Bankruptcy 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-63C77D28-2EB9-42CA-ACF9-40FE55F084D6" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-04F562EB-0D0D-4165-A359-53CF6A37F859"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C2333CD1-1816-4EB4-9132-4B8565FC21DC" valign="top" width="16%"> 49 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5B67AF03-B694-4A5C-9FED-F1F625D161C3" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Auto Score, v1 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A53C7216-921F-4926-A859-0E6E437F629E" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-334266C6-8891-40FE-A428-A7B38C2E0278"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-43040C0A-F42B-4E85-A946-F3BA62BB8297" valign="top" width="16%"> 57 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-706F33BC-FC83-4417-BF53-51C09D04EB56" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Auto Score, v2 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C7209E74-EEFA-4521-800B-F8D52F922854" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2BA701A6-9A08-49DF-8DA1-4D9487C14A90"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-1334B8A3-D364-481F-BB06-AFE07F280DFF" valign="top" width="16%"> 72 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-7C791AE6-7DD5-4B41-81C2-AF92FB5CE08A" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Auto Score, v3 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-45753D3C-A4B2-4557-BDD6-139773FC0D76" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A50C0EBE-5269-4D90-9ABE-3EC5C0BABB37"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B6B69A4B-5D2D-4766-B62B-4515107D0E0B" valign="top" width="16%"> 78 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-348561ED-6AA9-4707-B187-937C64828798" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Auto Score, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B085A587-B4ED-479C-806E-5465AB56F8FA" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-E44F8CC8-EEEA-4F51-BC21-368D6ECC7BB3"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8AD37482-04C1-42A5-A16F-38AC7887046C" valign="top" width="16%"> 54 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8FA10C17-7860-4EDC-83E9-060FB281E241" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Bankcard Score, v1 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2AC307F3-9486-4686-B250-A7ADF7020624" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-43E7EE81-82B6-4D23-BF31-DA76927B9927"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-560FA083-6F70-4F2F-BD6C-50686F8DDB6C" valign="top" width="16%"> 59 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D0E5DECD-46FF-4110-986C-D4C9C16C62EE" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Bankcard Score, v2 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-947677C6-3C15-46FD-A7D8-BA14DA701303" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2F4552B9-80C6-43AA-BED7-08CDC82AE678"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-335B9EE3-7170-4215-9618-54B10E06245F" valign="top" width="16%"> 74 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-1AEA78F4-267D-481F-96FE-47EFE8EF7E12" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Bankcard Score, v3 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-6CBC7A9D-3BF0-4C79-AD74-2918F7B9CCA4" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-EB810377-298D-499F-B6E7-1E10509324FA"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9E39A59D-A943-41C5-AC08-F7ED262643CB" valign="top" width="16%"> 79 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2C36C468-304C-4133-A0FD-A95B32660316" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Bankcard Score, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-7D1E6420-64AD-46FC-B9E5-1AEA27210CF9" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D361DFAD-68AC-4A9E-AF8F-669999156387"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3E7B8ACD-760C-4F44-BFB3-28E89B9B0592" valign="top" width="16%"> 76 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-946EE405-0962-4DE5-B0D6-4F833EC69CE2" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Bankruptcy Score 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F8A0B292-2DB7-440A-8E3D-610DD0E00282" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0DDFD380-F9E2-412D-89BD-EAA27376FFAC"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-FB7D5BEF-DE16-44C9-8D65-38A96E6D88EC" valign="top" width="16%"> 48 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8826EEEB-7E8C-4536-A9D7-A9FED1B5CB2E" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Installment Score, v1 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-46354E87-6C6C-4683-B0B0-7A86289F52F1" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-DD85338B-22F9-4AE5-BCD1-6167C01D2C2C"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-DAC04A31-ED71-4B45-B0B5-245D9598B91C" valign="top" width="16%"> 56 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F7BD978A-C826-4792-89E1-535A0586D7B7" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Installment Score, v2 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B252C216-4114-4F6A-925E-55EA3634E917" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2032CE67-3669-49A2-94B6-9D7175594DE0"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-955F4918-22DB-4566-BD2C-A4413EB0A6FC" valign="top" width="16%"> 71 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-51A91025-6101-44CC-9F36-CD180084899C" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Installment Score, v3 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-AA8E63A8-F155-4526-8B65-304E75D62509" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-6A9A8E1F-D42F-42A5-B6CA-9279C517A723"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-E606F656-CE2D-466D-B1E0-DDB0503729B0" valign="top" width="16%"> 50 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-20A67330-7514-4A30-B7E6-D2A5D29CE136" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Personal Score, v1 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-40614FFE-15A3-4D64-9FFD-9FBF516EB392" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5BB7FBE0-7608-4BA9-AAD8-54963E64A509"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2A3A8270-59CE-4AA1-A2D4-7B3DDBCB8349" valign="top" width="16%"> 58 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0899F852-7063-4B80-8215-15C05BDB2C65" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Personal Score, v2 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-BDF1A182-08FB-4675-BEC1-3EE30DA8CF2F" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-BF1E8FEE-CD89-4B7D-A6FE-C657793F3A51"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B41A5D48-80C5-4FE6-AB1E-1FE5A5D37112" valign="top" width="16%"> 73 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8758653D-EE11-4E9D-B5D3-39ADDB89A895" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Personal Score, v3 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2DC6ABE2-32CA-451A-B643-87FEFD7D7153" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9EA707B3-78BE-400C-BC7F-34BA1E6E1D3A"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A71C5D15-F4E8-48C2-ADE1-0AE00A47CB07" valign="top" width="16%"> 64 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2BC07D4F-1953-4D05-99AE-91818DCA09BA" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Revenue Score (One Digit) 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-394AB3E7-4924-4CBB-BA2D-438A419FDA11" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9F770BC0-95E5-402F-8285-83774515D408"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-806D325B-6340-4821-AD95-E949A4A37948" valign="top" width="16%"> 63 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D981DB3E-0D59-406C-A003-88B4A9DAAE81" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Revenue Score (Three Digit) 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3D8EE486-9ACE-49F8-93D0-DDB14B888ED5" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-E8278D77-2BFD-4691-ADFC-27350AF1FE73" valign="top"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0D4B7FF4-76C6-434E-B276-79934F603C77" valign="top" width="16%"> 41 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2325B528-C515-47E6-896C-A777996D546E" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic, v1 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D2403EF5-BA38-45BD-998E-F6AF5DC1801E" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-DBE850F6-07D2-4397-A7EC-ACF919AAF011"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-FC5FFA04-1A81-4500-918A-787A3C3A64EC" valign="top" width="16%"> 55 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D3DD2E8B-E89E-4EEB-B058-CF27D6A0C843" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic, v2 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-CBAA0EDB-B4BF-4F32-A89C-10478BA3AA09" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-468E3CB2-B768-4A4E-80CD-0130B4AF2625"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-7B0C378D-561E-4195-B353-12E38A7F2BF4" valign="top" width="16%"> 70 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-1FA7A583-C47F-4F5E-848D-647C35E3B195" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic, v3 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-85708408-1B98-4F89-8760-45992E484DFB" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-22EF53C2-F473-495C-903A-50716FB47C33"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-93042D5C-8505-42B2-A78D-A1EE29E90791" valign="top" width="16%"> 77 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C061B6F8-61BF-484D-9A65-751A8685E4DA" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic, v8 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-08580F1F-CC64-48A1-8C0D-4F0F4D02ED8C" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-97135260-C3B3-4B39-A536-8C21ADB1C636"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-169D0F4F-7AA5-4B9A-AC57-9127E077673C" valign="top" width="16%"> 60 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-84A30FDE-087A-4639-8315-2332DBF6C22F" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, NextGen, v1 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5A035E2E-AB85-41F1-A72D-9A297292EE75" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-07121A1F-F837-424D-A0A3-07EF659AC116"> 
+				<td class="entry" headers="d144875e461 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D2EDD621-AF2B-4495-B7A2-23C344194FCA" valign="top" width="16%"> 66 
+				</td>
+ 
+				<td class="entry" headers="d144875e464 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8A1183BE-81DD-4F6B-B627-7BA9F99DA0E7" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, NextGen, v2 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e467 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-061F88E3-A471-41BC-9174-E79E93643A2C" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+		  </tbody>
+ 
+		</table>
+</div>
+ 
+		</div>
+ 
+		<div class="p"> 
+		
+<div class="tablenoborder"><table border="1" cellpadding="4" cellspacing="0" class="table" frame="border" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-7877DBCE-B67C-42D7-AA24-BD18E5124416" rules="all" summary=""><caption><span class="tablecap">TransUnion US Scoring Model Values</span></caption><thead align="left" class="thead"> 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-81EE4966-6C1F-46C4-9CEB-26AB74C8219E" valign="bottom"> 
+				<th align="left" class="entry" id="d144875e939" valign="bottom" width="16%"> Model Number 
+				</th>
+ 
+				<th class="entry" id="d144875e942" valign="bottom" width="73%"> Label 
+				</th>
+ 
+				<th align="center" class="entry" id="d144875e945" valign="bottom" width="11%"> Score 1 
+				</th>
+ 
+			 </tr>
+</thead>
+ 
+		  <tbody class="tbody"> 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-FF15A672-3B75-4834-94FD-2FFA4EC830A3"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3F0DD383-8C77-4C63-B0E0-79E6C6BDF9A8" valign="top" width="16%"> 91 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2ABBE734-90EC-4881-A9C1-A6BF9B1637A5" valign="top" width="73%"> Auto Recovery Model 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-21DF1F4C-3DAF-446C-993B-3398BB0C5304" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D19E367B-BF28-4ED0-B97C-9B666D063C35"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F562F517-43E0-4980-A068-CDF8E1A5A7CC" valign="top" width="16%"> 92 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-89C7FF9E-FDA6-4118-8219-64303EB33E98" valign="top" width="73%"> Bankcard Recovery Model 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C495A017-65D0-473D-9251-258EC99FB1C5" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4F1CCA99-01CF-4DC2-92A7-B59018163D81"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-E04284C0-8061-4FAE-A25C-1CD05AAD5E26" valign="top" width="16%"> 16 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D2EFBA63-288E-498F-8B30-04E3DC4A21E1" valign="top" width="73%"> DELPHI 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2B79A9D0-C52B-4020-8EA8-4F3AB27B137E" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-CE38C6F9-7576-436A-BBC2-AB34992C6D38"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-EAA3F1D0-F7DC-4F3A-A633-968227FB0B63" valign="top" width="16%"> 81 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4D1563B2-7D74-4E02-AD79-D2655BF62872" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Bankruptcy Risk Score 03 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-67382DCC-74EB-466F-84EF-D5614F3100C5" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-53E57A46-8F39-4714-90CC-CF0ED1E443FF"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-10744432-8157-41EA-9918-3D3508346089" valign="top" width="16%"> 08 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-82CCE4F9-F37F-48BD-814D-C63086BB4D2E" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Bankruptcy Risk Score 98 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-ED7AB087-4F87-418C-96F7-15AA189FD5BC" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C41A3E17-F9C2-478E-9DDB-69A55ECBA183"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C5F1E82D-8A85-4771-95F6-FCFAEA028B92" valign="top" width="16%"> 10 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-23B04B6D-18F5-42B5-A3AA-871800E4D180" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Revenue Score 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B826E824-0A87-43B5-94B9-2291A5AE2309" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8D273BF5-D763-4E2A-AA7D-96C92071EC75"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2D4482CB-7757-45E7-B73F-8AD5EF0FA96E" valign="top" width="16%"> 94 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0A9BDA29-7ED1-4865-833B-9F2B81137696" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic 08 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2A5435AF-8FBF-4CA4-A5BF-EBB8C5710B73" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-296B7627-E1AC-41FC-9DFB-19EAF0D6AFE7"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2A3CBC13-F25A-4E29-9756-84B0FF175964" valign="top" width="16%"> 95 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D142844C-7AEF-463E-A9A2-E5B7A847BD7D" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic 08 Auto 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9EFCCF5F-DA39-450B-AAAF-8E0E1E61B98E" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-34A0B3B5-B9E7-4311-A27B-973A1274F9B2"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-67366581-D2EF-4ECF-B126-71B68195D940" valign="top" width="16%"> 96 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D54E256F-62E7-4C75-8BF1-286984B8BD8C" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic 08 Bankcard 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-30C574C3-4790-478D-BEF8-F5F8F5946EA0" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-328AB2BD-CA13-4EFF-BE16-2F5E8728D57E"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D33BEBF3-27C0-409C-AF63-932268E21FCE" valign="top" width="16%"> 84 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D8989A48-5D21-49B7-BDC7-32938F4F3BE0" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic 2004 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4D0C77F2-C057-42E0-8053-FB2A023AABDB" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-819F3352-DDE7-4A4D-B66E-9E5AC288D47A" valign="top"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5409BAB9-AF2B-488E-912A-6697E1D9FE8B" valign="top" width="16%"> 02 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4E29CA08-4D7F-4A68-AD9F-98E6432EAD8E" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic 95 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-26D1DC65-B3FF-4E5E-BAAE-2013B4B5AE22" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-05260323-5242-43B5-B80E-1BA5DA8CB625"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-1F8F6D92-E07B-418F-B10C-24D85DF2C79C" valign="top" width="16%"> 11 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-99A8BFA4-AA70-49E4-A274-778BA9E999AC" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic 98 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C7113BF1-78F3-4224-9C87-086A5C4D3522" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-EBF6F82C-832F-4F56-A838-153F6DF1F007"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B4F4644A-75D9-46C4-AAA7-4360453175DE" valign="top" width="16%"> 86 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-53A426F4-7274-4087-94E4-85FC4FFB969F" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Auto 2004 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5AB19644-6AC9-46C9-9225-F3BD9EA57638" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-6DECC166-87C7-4256-981B-3A83391C04C4"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-6229DCA5-9B01-4FD5-882D-30EF14EA685F" valign="top" width="16%"> 04 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-96EF0C69-42DF-4F8D-83F0-E3691F78337B" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Auto 95 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-ECEA5ADA-1A23-4FD4-945C-75644F836864" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9E60C610-B623-4F94-AC33-FAAB500F0EBA"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-BB9C0064-10E8-4405-AB60-3B414676FBB5" valign="top" width="16%"> 13 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-65375A42-6389-41A2-BE87-C8E9B7279933" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Auto 98 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0FC9BC3C-D432-4CCD-89D8-3FB5BF529361" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B5C0F5E8-8783-4A5A-8713-E26B50743CDC"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3226937B-A868-4D00-8B69-2B6FEDE0E029" valign="top" width="16%"> 88 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-125A734E-E384-466D-94BE-E2549D5AADE1" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Bankcard 2004 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C9F35C09-DAF4-4924-84C7-7504C393B24D" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-52315606-5C94-44FC-91BE-C55EFC47C824"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-651F2561-7A83-49E6-B73F-A9AA15E5B25D" valign="top" width="16%"> 07 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-83E2CABD-3818-4B45-A222-371FD059AF27" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Bankcard 95 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2D78A785-FB24-4BA4-B46D-8C98F01C81CD" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-26A9F175-1D83-4C30-B034-5C15BBDAB602"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-38BFE87C-79D8-4CF7-A712-68DC64D0AAE7" valign="top" width="16%"> 15 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-CCA266D9-7CAE-4CFF-9BA9-214C8B7A789A" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Bankcard 98 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-8BFDF726-C7D6-485B-A4D5-781FBEF6E958" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-FD15F9FC-D2EB-4431-80B5-A121E686DED5"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-772E973C-678E-4E4C-94FE-B286515E00A6" valign="top" width="16%"> 87 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5C760B90-7581-4ED8-8EA3-DA45B0FC8B32" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Installment 2004 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3D868712-6D92-474E-BB14-D0791C1F8A84" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5039F941-F971-4DD4-B9B9-F7A01A37B0D9"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-CA490D04-D207-45F5-9AD8-3D72D1F10EE1" valign="top" width="16%"> 05 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-AD0A470D-694F-46F5-9E6C-F99D6C2199FC" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Installment Loan 95 
+				  <div class="note" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-74CC2B6A-A408-4B58-9CF6-2FCC5F68AA8E"><b>Note</b> This score is not supported by the 
+					 <span class="ph" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-625DF0EE-DA82-4BA5-8129-859557875DEA_unique_5">Analytic Module</span>. 
+				  </div>
+ 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-27F19876-7D22-4F49-B34B-DD86E68F477C" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F4E3B099-7D30-49E3-84C1-D3844BF4623A"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-E131D39F-DC43-47A3-8A51-142D12065478" valign="top" width="16%"> 14 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-3C912954-16DE-44D4-B343-B0D2CBBB5E9A" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Installment Loan 98 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B274AF54-D9EF-41CD-AD94-4F85F19A1784" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-DB72CC90-F7EE-4F89-A49F-948EB0A35A38"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-BABC49DB-0FF2-453F-9A1F-5FD4DB4A424E" valign="top" width="16%"> 85 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-1A6AC508-B9BA-4167-A390-72289C4C9EDA" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Personal Finance 2004 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4DF20747-8C8B-4B3D-93B4-62CAD59EC313" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-DFC20BA7-DCF2-4196-ACBA-7E02BAD405E3"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-914D3F9B-B077-46A3-94EE-0D17AE4488BB" valign="top" width="16%"> 03 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-11C5C3D8-9C3A-41AC-A09B-B9D0BD23DA61" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Personal Finance 95 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-02DC59EE-10B5-462A-81FF-442404EEA65F" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-54711F2C-07BA-4593-9525-7B1927A9FF1F"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-CC181F74-3345-4B25-9D06-937F0DA0F8CC" valign="top" width="16%"> 12 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-5765FF1E-50CE-4B05-B562-E731145652A7" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, Classic Personal Finance 98 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-43CB7881-C187-4886-BD22-244CB8E2935A" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-D85FF527-0211-4429-83AC-2A6B48F06565"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A62F064E-3757-4E52-967B-253C20D1C0EC" valign="top" width="16%"> 19 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-821484E2-0042-400A-B46A-A98ADEF09B77" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, NextGen 00 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-B2415AFF-D2FA-42D0-BECA-E5D470A59181" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-729C1086-6B08-4F4B-A68A-B1475F17C469"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F7255314-843D-4CB8-A7C9-13E39E4E1106" valign="top" width="16%"> 83 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-118027FF-7E2B-4896-A381-D594E2BFF472" valign="top" width="73%"><span class="ph">FICO<sup>®</sup></span> Risk Score, NextGen 03 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F9FCC50F-DF4B-44DD-B80C-375EAFA7A13E" valign="top" width="11%"> X 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-30357FF6-6C0E-435B-AC0E-6F00FA276B20"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A69428CF-6E6E-41DB-B441-C584456CD71E" valign="top" width="16%"> 06 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A2EB3450-BBB3-4FA9-935C-1DB40D4FAC3C" valign="top" width="73%"> New DELPHI 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-EF19DA85-7874-4A30-8AFB-8ED01BEC9BC6" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-70830322-6021-4F79-9E0D-68F3824D8D9D"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-9C74E1DA-6042-4E59-B42A-F95C8F9921BF" valign="top" width="16%"> 90 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-C66D149A-96C1-4F08-82AF-38106E2BA88E" valign="top" width="73%"> Recovery Model 2.0 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-CAF2AF59-6BB4-492B-BB1B-90F2111396E8" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-E739CA2D-47AC-414B-B420-2189CA232086"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-0FBA97C9-10F5-4560-A721-95909C2ACB2B" valign="top" width="16%"> 09 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-197796C7-EF64-477D-9325-6772942DDF56" valign="top" width="73%"> REWARD collection 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-4CF02AD4-3965-4094-9501-06A5A3C2C799" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-CCBCD29F-E292-47C0-A6D3-B0A0D9260B23"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-F8D4FB3D-A4FA-48C9-87A2-4006EF81B720" valign="top" width="16%"> 17 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-FCDF7C55-7016-4FE0-8B9C-710402C2D63C" valign="top" width="73%"> Wireless Model 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-2D615260-30DA-49DF-9387-EC9E576BB24D" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-04A09D3C-D7FA-4EB3-BF1B-F325405121DA"> 
+				<td class="entry" headers="d144875e939 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-656220E8-777D-4C4E-9A13-676F170F87F4" valign="top" width="16%"> 89 
+				</td>
+ 
+				<td class="entry" headers="d144875e942 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-A8E6AC01-DEC9-493D-8163-26DCD98A216E" valign="top" width="73%"> Wireless Model 3.0 
+				</td>
+ 
+				<td align="center" class="entry" headers="d144875e945 " id="GUID-A028CDB8-88CB-4E16-BCB9-B3FF14BCCCBB__GUID-68AB162A-07D7-4B38-9164-BC3B5B05A39C" valign="top" width="11%"> 
+				</td>
+ 
+			 </tr>
+ 
+		  </tbody>
+ 
+		</table>
+</div>
+ 
+		</div>
+ 
+	 </div>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-172DAA61-737E-42AA-9AEA-DEECFCC57B00.html" title="Many elements in the Application Processing Module domain model can contain enumerated values. Some values may be pre-defined by FICO as domain values as part of the default Origination Manager installation; others are suggested values and may be configured for you to assist your implementation process.">Lists of Values</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

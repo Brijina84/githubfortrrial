@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="Creating and Mapping Score Model Variables" name="DC.Title" /><meta content="Create and map variables to data methods or fields in the object model. These variables determine the data methods and fields that are evaluated when the score model is executed." name="abstract" /><meta content="Create and map variables to data methods or fields in the object model. These variables determine the data methods and fields that are evaluated when the score model is executed." name="description" /><meta content="variables, creating and mapping for score models, score model variables" name="DC.subject" /><meta content="variables, creating and mapping for score models, score model variables" name="keywords" /><meta content="GUID-64BB4F5E-975A-4179-820C-81027C590341.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-ABFF4E97-813C-4D92-8A80-948184B51459" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Creating and Mapping Score Model Variables</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-ABFF4E97-813C-4D92-8A80-948184B51459"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Creating and Mapping Score Model Variables</h1>
+<div class="body taskbody"><div class="abstract"> 
+	  <span class="shortdesc">Create and map variables to data methods or fields in the object model. These variables determine the data methods and fields that are evaluated when the score model is executed. 
+	 </span>
+ After you set up the variables, you can build a score model that uses them as inputs. 
+  </div>
+ 
+	 <div class="context"> 
+		<div class="p">For a score model, you can specify up to 30 variables of each of these types: 
+		<ul class="ul"> 
+		  <li class="li">Integer (integer1-integer30) 
+		  </li>
+ 
+		  <li class="li">String (string1-string30) 
+		  </li>
+ 
+		  <li class="li">Real number (real1-real30) 
+		  </li>
+ 
+		</ul>
+ 
+		</div>
+ 
+		<div class="p">Before you set up variables, make sure you can edit the score model: 
+		<ul class="ul"> 
+		  <li class="li">If the score model has been checked in, click 
+			 <span class="ph uicontrol">Check Out</span>. 
+		  </li>
+ 
+		  <li class="li">If this is a new score model that has not been checked in yet, click 
+			 <span class="ph uicontrol">Edit</span>. 
+		  </li>
+ 
+		</ul>
+ 
+		</div>
+ 
+	 </div> 
+	 <ol class="ol steps" id="GUID-ABFF4E97-813C-4D92-8A80-948184B51459__GUID-40E7B8A3-41A3-4CC1-81E3-1CA4EF14F2EF"><li class="li step stepexpand" id="GUID-ABFF4E97-813C-4D92-8A80-948184B51459__WP1110614_unique_4"> 
+		  <span class="ph cmd">In the 
+			 <span class="keyword wintitle">Manage Variables</span> section of the 
+			 <span class="keyword wintitle">Score Model Properties</span> page, click the 
+			 <span class="ph uicontrol">Add</span> icon. 
+		  </span> 
+		  <div class="itemgroup stepresult">A variable is added with the following properties and default values: 
+			 <table border="1" cellpadding="4" cellspacing="0" class="simpletable" summary=""><tr class="sthead"><th align="left" class="stentry" id="d160768e96" valign="bottom">Property</th>
+<th align="left" class="stentry" id="d160768e98" valign="bottom">Default</th>
+ 
+				</tr>
+<tr class="strow"><td class="stentry" headers="d160768e96" valign="top">Name</td>
+<td class="stentry" headers="d160768e98" valign="top">variable#</td>
+ 
+				</tr>
+<tr class="strow"><td class="stentry" headers="d160768e96" valign="top">Score model variable name</td>
+<td class="stentry" headers="d160768e98" valign="top">integer#</td>
+ 
+				</tr>
+<tr class="strow"><td class="stentry" headers="d160768e96" valign="top">Description</td>
+<td class="stentry" headers="d160768e98" valign="top">None</td>
+ 
+				</tr>
+<tr class="strow"><td class="stentry" headers="d160768e96" valign="top">Object or reference</td>
+<td class="stentry" headers="d160768e98" valign="top">Application</td>
+ 
+				</tr>
+<tr class="strow"><td class="stentry" headers="d160768e96" valign="top">Field or data method</td>
+<td class="stentry" headers="d160768e98" valign="top">StrategySelectionRandomNumber</td>
+ 
+				</tr>
+<tr class="strow"><td class="stentry" headers="d160768e96" valign="top">Type</td>
+<td class="stentry" headers="d160768e98" valign="top">integer</td>
+ 
+				</tr>
+<tr class="strow"><td class="stentry" headers="d160768e96" valign="top">Data object reference</td>
+<td class="stentry" headers="d160768e98" valign="top">None</td>
+ 
+				</tr>
+</table>
+ 
+		  </div> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Click the variable&#39;s name to modify the properties. 
+		  </span> 
+		  <div class="itemgroup stepresult">The 
+			 <span class="keyword wintitle">Variable Properties</span> page appears. 
+		  </div> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">(Optional) Modify the name of the variable. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">(Optional) Add a description. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Select the data type for the variable from the 
+			 <span class="ph uicontrol">Type</span> drop-down list. 
+		  </span> 
+		  <div class="itemgroup info">You can select 
+			 <span class="ph uicontrol">integer</span>, 
+			 <span class="ph uicontrol">string</span>, or 
+			 <span class="ph uicontrol">real</span>. 
+		  </div> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Select a corresponding value from the 
+			 <span class="ph uicontrol">Score model characteristic</span> drop-down list. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Click the 
+			 <span class="ph uicontrol">Change</span> link for the 
+			 <span class="ph uicontrol">Variable maps to</span> field to modify the field or data method that the variable maps to in the object model. 
+		  </span> 
+		  <div class="itemgroup info">The Object Model Browser appears. 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-ABFF4E97-813C-4D92-8A80-948184B51459__GUID-D7FC031C-21CB-4C06-9FC7-5752D258B966" type="a"> 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Select a field or data method. 
+				</span> 
+				<div class="itemgroup info">You can browse or search for a data method or field in the object model. 
+				</div> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Click 
+				  <span class="ph uicontrol">Select</span>. 
+				</span> 
+			 </li>
+ 
+		  </ol>
+ 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Specify whether you want to use a data object reference. If you select Yes, select the data object reference from the drop-down list that is displayed. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-ABFF4E97-813C-4D92-8A80-948184B51459__WP1112161"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">Save</span>. 
+		  </span> 
+		</li>
+</ol>
+ 
+	 <div class="section postreq" id="GUID-ABFF4E97-813C-4D92-8A80-948184B51459__GUID-C15A445B-B594-44F4-B64E-3C367EDCC6BF">
+
+		<p class="p">Repeat this process for all the variables you want to map. 
+		</p>
+ 
+	 </div>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-64BB4F5E-975A-4179-820C-81027C590341.html" title="Use the options on the list and properties pages for score models to create, copy, and delete score models, and define characteristics and bins.">Managing Score Models</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

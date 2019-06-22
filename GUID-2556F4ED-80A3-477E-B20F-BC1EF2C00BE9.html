@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="Example: Building a Data Method" name="DC.Title" /><meta content="Building a data method involves creating it, and defining and validating its expression. The following example takes you through the steps to build a data method (dm_App_WeightedMonthlyIncome) that calculates the weighted monthly income for an applicant." name="abstract" /><meta content="Building a data method involves creating it, and defining and validating its expression. The following example takes you through the steps to build a data method (dm_App_WeightedMonthlyIncome) that calculates the weighted monthly income for an applicant." name="description" /><meta content="data methods, example for creating and testing" name="DC.subject" /><meta content="data methods, example for creating and testing" name="keywords" /><meta content="GUID-ED03C1FF-E566-4914-AC45-A69F65C3505D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-7B1316F8-DDA3-4212-990E-F022DBAA133B.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Example: Building a Data Method</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Example: Building a Data Method</h1>
+<div class="body taskbody"><div class="abstract"> 
+	  <span class="shortdesc">Building a data method involves creating it, and defining and validating its expression. The following example takes you through the steps to build a data method (<samp class="ph codeph">dm_App_WeightedMonthlyIncome</samp>) that calculates the weighted monthly income for an applicant. 
+	 </span>
+ 
+  </div>
+ 
+	 <div class="context"> 
+		<table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__GUID-C46D5495-D60E-416B-8958-52CFE5172C30"><b>Note</b> The example does not use the provided domain model. It is assumed that the objects in the example exist, and that you have created the data object reference 
+		  <samp class="ph codeph">dor_AllIncomeOwner</samp> and the data method 
+		  <samp class="ph codeph">dm_Util_MonthlyAmount</samp>. 
+		</div></td></tr></table>
+ 
+		
+<div class="tablenoborder"><table border="1" cellpadding="4" cellspacing="0" class="table" frame="border" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1111962_unique_1" rules="all" summary=""><caption><span class="tablecap">Details of the data method 
+		  <samp class="ph codeph">dm_App_WeightedMonthlyIncome</samp></span></caption> 
+		   
+		   
+		  <thead align="left" class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="d34294e59" valign="top" width="25%">Item 
+				</th>
+ 
+				<th class="entry" id="d34294e62" valign="top" width="75%">Value 
+				</th>
+ 
+			 </tr>
+ 
+		  </thead>
+ 
+		  <tbody class="tbody"> 
+			 <tr class="row" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1111970_unique_1"> 
+				<td class="entry" headers="d34294e59 " valign="top" width="25%">Name 
+				</td>
+ 
+				<td class="entry" headers="d34294e62 " valign="top" width="75%">dm_App_WeightedMonthlyIncome 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1111974_unique_2"> 
+				<td class="entry" headers="d34294e59 " valign="top" width="25%">Description 
+				</td>
+ 
+				<td class="entry" headers="d34294e62 " valign="top" width="75%">Calculates the weighted sum of monthly income for an applicant, given a stated ownership percentage. 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1111978_unique_1"> 
+				<td class="entry" headers="d34294e59 " valign="top" width="25%">Context 
+				</td>
+ 
+				<td class="entry" headers="d34294e62 " valign="top" width="75%">Application.applicant 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1111982_unique_1"> 
+				<td class="entry" headers="d34294e59 " valign="top" width="25%">Result Type 
+				</td>
+ 
+				<td class="entry" headers="d34294e62 " valign="top" width="75%">numeric 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1111991_unique_1"> 
+				<td class="entry" headers="d34294e59 " valign="top" width="25%">Local Variables 
+				</td>
+ 
+				<td class="entry" headers="d34294e62 " valign="top" width="75%"> 
+				  <pre class="pre codeblock">Name            Data Type   Initial Value
+xIncomeSum      numeric     0.0
+xApplicantRef   string      
+xMonthlyIncome  numeric     0.0</pre>
+ 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1111998_unique_1"> 
+				<td class="entry" headers="d34294e59 " valign="top" width="25%">Data Object Reference 
+				</td>
+ 
+				<td class="entry" headers="d34294e62 " valign="top" width="75%">dor_AllIncomeOwner 
+				  <p class="p" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112001_unique_1">Accesses the Application.Finance.Income.Owner object 
+				  </p>
+ 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112003_unique_1"> 
+				<td class="entry" headers="d34294e59 " valign="top" width="25%">Data Method 
+				</td>
+ 
+				<td class="entry" headers="d34294e62 " valign="top" width="75%">dm_Util_MonthlyAmount 
+				  <p class="p" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112006_unique_2">Converts an amount from a given frequency to an amount for a monthly frequency 
+				  </p>
+ 
+				</td>
+ 
+			 </tr>
+ 
+			 <tr class="row" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112008_unique_1"> 
+				<td class="entry" headers="d34294e59 " valign="top" width="25%">Expression 
+				</td>
+ 
+				<td class="entry" headers="d34294e62 " valign="top" width="75%"> 
+				  <pre class="pre codeblock">result := 0; // return zero if data is missing or negative
+xApplicantRef := applicant.ApplicantCrossReferenceId;
+for every Application.Finance.Income.Owner in dor_AllIncomeOwner do
+  if (Owner.applicantCrossReferenceId = xApplicantRef) then
+    if ((IncomeAmount &lt;&gt; null) and (Frequency &lt;&gt; null) then
+      if (IncomeAmount &gt; 0) then
+        xMonthlyIncome := dm_Util_MonthlyAmount(IncomeAmount, Frequency);
+        if ((xMonthlyIncome &lt;&gt; null) and (OwnershipPercent &lt;&gt; null) then
+          if ((xMonthlyIncome &gt; 0) and (OwnershipPercent &gt; 0) and
+          (OwnershipPercent &lt;= 100)) then
+            xIncomeSum := xIncomeSum + (xMonthlyIncome * OwnershipPercent / 100);
+          endif
+        endif
+      endif
+    endif
+  endif
+endfor
+result := xIncomeSum;</pre>
+ 
+				</td>
+ 
+			 </tr>
+ 
+		  </tbody>
+ 
+		</table>
+</div>
+ 
+		<div class="p" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112032_unique_2">The data method expression reads as follows: 
+		<ol class="ol" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__GUID-358E3009-4350-4C5F-8A16-DD49D1CD98B4_unique_1"> 
+		  <li class="li" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112033_unique_1">Assign 
+			 <samp class="ph codeph">result</samp> an initial value of 
+			 <samp class="ph codeph">0</samp>. 
+		  </li>
+ 
+		  <li class="li" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112034_unique_1">Assign the local variable 
+			 <samp class="ph codeph">xApplicantRef</samp> the value contained by 
+			 <samp class="ph codeph">ApplicantCrossReferenceId</samp>. 
+		  </li>
+ 
+		  <li class="li" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112035_unique_1">For every 
+			 <samp class="ph codeph">Owner</samp> object in the data object reference 
+			 <samp class="ph codeph">dor_AllIncomeOwner</samp>, if 
+			 <samp class="ph codeph">ApplicantCrossReferenceId</samp> is equal to the local variable 
+			 <samp class="ph codeph">xApplicantRef</samp>, then assign 
+			 <samp class="ph codeph">result</samp> the value 
+			 <samp class="ph codeph">0</samp> (the initial value) plus the following calculated value: The value produced by multiplying the result of 
+			 <samp class="ph codeph">dm_Util_MonthlyAmount</samp> (with inputs 
+			 <samp class="ph codeph">IncomeAmount</samp> and 
+			 <samp class="ph codeph">Frequency</samp>) by the stated value of 
+			 <samp class="ph codeph">OwnershipPercent</samp>, and dividing the product by 
+			 <samp class="ph codeph">100</samp>. 
+		  </li>
+ 
+		</ol>
+ 
+		</div>
+ 
+		<p class="p">To set up the data method, perform the following steps: 
+		</p>
+ 
+	 </div> 
+	 <ol class="ol steps" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__GUID-B1FAFAF0-C3E5-4702-8405-CE03415BBBFC_unique_1"><li class="li step stepexpand" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112759_unique_5"> 
+		  <span class="ph cmd">In the navigation pane, click 
+			 <span class="ph uicontrol">Data Methods</span>. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">On the<span class="keyword wintitle"> Data Methods</span> list page, click the 
+			 <span class="ph uicontrol">Create</span> button. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">In the 
+			 <span class="keyword wintitle">Create</span> dialog box, enter the name 
+			 <kbd class="ph userinput">dm_App_WeightedMonthlyIncome</kbd>. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1112775_unique_3"> 
+		  <span class="ph cmd">(Optional) In the 
+			 <span class="ph uicontrol">Description</span> field, enter 
+			 <kbd class="ph userinput">Calculates the weighted sum of monthly income for an applicant, given a stated ownership percentage</kbd>. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">Create</span>. 
+		  </span> 
+		  <div class="itemgroup stepresult">The data method is listed on the 
+			 <span class="keyword wintitle">Data Methods</span> page. 
+		  </div> 
+		</li>
+<li class="li step stepexpand" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__WP1111351_unique_1"> 
+		  <span class="ph cmd">Click the data method&#39;s name to display its<span class="keyword wintitle"> Data Method Properties</span> page. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">Edit</span>. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">Change</span> for the 
+			 <span class="ph uicontrol">Context</span> field, and select 
+			 <samp class="ph codeph">Application.applicant</samp> from the Object Model Browser. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">From the 
+			 <span class="ph uicontrol">Result type</span> drop-down list, select 
+			 <samp class="ph codeph">numeric</samp>. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Add local variables. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__GUID-310CA3F5-0AF2-4E12-B030-DC394E352A34" type="a"> 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">In the 
+				  <span class="ph uicontrol">Local Variables</span> section, click the 
+				  <span class="ph uicontrol">Add</span> icon. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Click the (default) name of the local variable, and specify 
+				  <kbd class="ph userinput">MonthlyIncome</kbd> for name and 
+				  <kbd class="ph userinput">numeric</kbd> for type in the 
+				  <span class="keyword wintitle">Local Variable</span> page. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Click 
+				  <span class="ph uicontrol">Save</span>. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Use the 
+				  <span class="ph uicontrol">Parent View</span> icon or the breadcrumbs path at the top of the page to get back to the 
+				  <span class="keyword wintitle">Data Method Properties</span> page. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Repeat steps a–d to add the local variables 
+				  <samp class="ph codeph">xIncomeSum</samp> and 
+				  <samp class="ph codeph">xApplicantRef</samp>. 
+				</span> 
+				<div class="itemgroup info">Make sure that you select the type 
+				  <samp class="ph codeph">string</samp> for 
+				  <samp class="ph codeph">xApplicantRef</samp>. 
+				</div> 
+			 </li>
+ 
+		  </ol>
+ 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Construct the data method expression in the Expression Editor. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-2556F4ED-80A3-477E-B20F-BC1EF2C00BE9__GUID-7792911F-7365-44DE-8EEC-4EA5E5A0E6F5" type="a"> 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">In the initial assignment statement that has been inserted, replace the word 
+				  <samp class="ph codeph">null</samp> with 
+				  <kbd class="ph userinput">0</kbd>. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Positioning your cursor at the end of the statement, click the 
+				  <span class="ph uicontrol">Insert operations</span> icon, then click the 
+				  <span class="ph uicontrol">Inline comment</span> operator, and click 
+				  <span class="ph uicontrol">Close</span>. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Enter the comment 
+				  <kbd class="ph userinput">return zero if data is missing or negative</kbd> and press 
+				  <span class="ph uicontrol">Enter</span>. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Enter 
+				  <kbd class="ph userinput">x</kbd>, press 
+				  <span class="ph uicontrol">Ctrl + Space</span>, and double-click 
+				  <samp class="ph codeph">xApplicantRef</samp> in the drop-down list to insert the local variable. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Enter 
+				  <kbd class="ph userinput">:=</kbd> or insert the 
+				  <span class="ph uicontrol">Assignment</span> operator using the 
+				  <span class="ph uicontrol">Insert operations</span> option. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Enter 
+				  <kbd class="ph userinput">applicant.</kbd>, press 
+				  <span class="ph uicontrol">Ctrl + Space</span>, and double-click 
+				  <samp class="ph codeph">application.Finance.Income.Owner</samp> in the drop-down list to assign this value to the local variable 
+				  <samp class="ph codeph">xApplicantRef</samp>. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">At the start of a new line, click the 
+				  <span class="ph uicontrol">Insert from Object Model</span> icon, then select the data object reference 
+				  <samp class="ph codeph">dor_AllIncomeOwner</samp> from the Object Model Browser, and click 
+				  <span class="ph uicontrol">Select</span>. 
+				</span> 
+				<div class="itemgroup stepresult">The following 
+				  <samp class="ph codeph">for</samp> loop is inserted in the data method expression: 
+				  <pre class="pre codeblock">for every application.Finance.Income.Owner in dor_AllIncomeOwner do
+endfor</pre>
+ 
+				</div> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Within the 
+				  <samp class="ph codeph">for</samp> loop, click the 
+				  <span class="ph uicontrol">Insert operations</span> icon, then click the 
+				  <span class="ph uicontrol">If Then block</span> operator, and click 
+				  <span class="ph uicontrol">Close</span>. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand"> 
+				<span class="ph cmd">Enter the rest of the data method expression. 
+				</span> 
+				<div class="itemgroup info">Use content assist to insert the necessary condition blocks, local variables, data method 
+				  <samp class="ph codeph">dm_Util_MonthlyAmount</samp>, and operators, and type in the remaining text. 
+				</div> 
+			 </li>
+ 
+		  </ol>
+ 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Click the 
+			 <span class="ph uicontrol">Validate</span> icon in the Expression Editor toolbar and ensure that there are no errors. 
+		  </span> 
+		</li>
+<li class="li step stepexpand"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">Save</span>. 
+		  </span> 
+		</li>
+</ol>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-7B1316F8-DDA3-4212-990E-F022DBAA133B.html" title="A data method is a procedure associated with a specific type of object within the FICO Origination Manager Decision Module domain model.">Data Methods</a></div>
+</div>
+<div class="relinfo reltasks"><strong>Related Task Topics</strong><br />
+<div><a class="link" href="GUID-ED03C1FF-E566-4914-AC45-A69F65C3505D.html" title="Use the Create button on the Data Methods list page to add a new data method.">Creating a Data Method</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="Example: Adding a Throw Error Event" name="DC.Title" /><meta content="A throw handler event catches an error in a a task, call-activity, or sub-process. When the workflow or business process encocunters a throw error event, the current path of execution ends and an error is thrown. Use the throw error event with an error handler event to allow the workflow exectuion to proceed along another path. If the throw error event is not connected to an error handler event, the system throws an exception. A throw error event must have an error code associated with it." name="abstract" /><meta content="A throw handler event catches an error in a a task, call-activity, or sub-process. When the workflow or business process encocunters a throw error event, the current path of execution ends and an error is thrown. Use the throw error event with an error handler event to allow the workflow exectuion to proceed along another path. If the throw error event is not connected to an error handler event, the system throws an exception. A throw error event must have an error code associated with it." name="description" /><meta content="throw error, adding, events, throw error" name="DC.subject" /><meta content="throw error, adding, events, throw error" name="keywords" /><meta content="GUID-C98C879B-F48D-49FF-839C-C67795679164.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Example: Adding a Throw Error Event</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Example: Adding a Throw Error Event</h1>
+<div class="body taskbody"><div class="abstract"> 
+	  <span class="shortdesc">A throw handler event catches an error in a a task, call-activity, or sub-process. When the workflow or business process encocunters a throw error event, the current path of execution ends and an error is thrown. Use the throw error event with an error handler event to allow the workflow exectuion to proceed along another path. If the throw error event is not connected to an error handler event, the system throws an exception. A throw error event must have an error code associated with it. 
+	 </span>
+</div>
+ 
+	 <div class="context"> 
+		<table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__GUID-7D193DC3-7770-4EE3-B750-E37F1B487225"><b>Note</b> The throw error is caught at processing level that is one level above. For example, if a sub-process has a throw error event attached, the error is caught at the level above a sub-process, which is at the process level. Configure the related error handler at the process level. The throw error event is at the added at the end or boundary of a task, call-activity, or sub-process. Such throw error events are used to handle custom errors. However, if a task, call-activity, or sub-process throws errors, an error handler can catch these errors. You do not add any custom throw error first. 
+		</div></td></tr></table>
+ 
+		<p class="p">In the following example, first create a sub-process in which you add a throw error event to Approve Application sub-process. Call this TestSubProcess. Then, create a process TestProcess and add the TestSubProcess to it. Add an error handler to catch the error and specify a human activity when the error occurs. 
+		</p>
+ 
+	 </div> 
+	 <ol class="ol steps" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__GUID-9748038C-F02E-4A62-8D02-9DC2EEDCDECE"><li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_E07193271501423F907CB4AE85873849_unique_1"> 
+		  <span class="ph cmd">Drag and drop the Start event. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_CA5100BF0F7A4BA880497E7000A69661_unique_1"> 
+		  <span class="ph cmd">Drag and drop the Approve Application sub-process, and then connect the Start event to the sub-process. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_6CC15FC1C44C4DDC9945FA44C363FE5D"> 
+		  <span class="ph cmd">Drag and drop the Throw Error event, and then connect it to the sub-process. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_D97AC36F13E547A2BD97937C13421BAE"> 
+		  <span class="ph cmd">In the Properties pane for the Throw Error event, specify the error code. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_4B07BC0B6E004F94A879FC4C55B928D2">
+		  <span class="ph cmd">Drag and drop the End event, and then link the Throw Error event to it.
+		  </span>
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_CC85B60E45D841E387E7F3FEBCC4FEE8"> 
+		  <span class="ph cmd">Publish the TestSubProcess sub-process. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_3FBC8170D0D34441B5B5E9830D712980"> 
+		  <span class="ph cmd">Click Create next to Workflows. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_B98B55A89BB5478083CCDB6A20BDFEAE"> 
+		  <span class="ph cmd">Drag and drop the Start event. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_4EF5478635A24743A8074B042A8F7AF6"> 
+		  <span class="ph cmd">Drag and drop the TestSubProcess sub-process, and then connect the Start event to it. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_D2B10710E80442F9B2A337FEE6B9C4C6"> 
+		  <span class="ph cmd">Drag and drop the End event, and then connect the TestSubProcess sub-process to it. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_0BF80D501FCE4433904CA70CE96093E2"> 
+		  <span class="ph cmd">Drag and drop the Error Handler event. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_606906906AFE48A484643F3CDE898544"> 
+		  <span class="ph cmd">In the Properties pane for the Error Handler event, enter the error code that you specified for the Throw Error event and select TestSubProcess from the Node drop-down list. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_67C2A586CCA3406FA839CF8A203759E2_unique_1"> 
+		  <span class="ph cmd">Drag and drop a User Activity,and connect the Error Handler event to it. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_F2B992BF31074A46AFA8041D903D92E9_unique_1"> 
+		  <span class="ph cmd">Configure the User Activity event by selecting the page that must open or load for the user activity. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_E3D31005F37A4222A30B953A8A0EE63C">
+		  <span class="ph cmd">Click Validate and correct errors, if any.
+		  </span>
+		</li>
+<li class="li step" id="GUID-DCECF479-E3D5-42B8-9492-D1B63F81EA61__STEP_74529E027DBB44B1B74EA3841FEC1D13_unique_1"> 
+		  <span class="ph cmd">Click PUBLISH. 
+		  </span> 
+		</li>
+</ol>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-C98C879B-F48D-49FF-839C-C67795679164.html" title="An event is the smallest and most basic element in a business process or workflow. There are seven generic predefined events that you can use to in a workflow or a subflow. Start and stop are two events that must be present in a workflow or a subflow.">Events</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

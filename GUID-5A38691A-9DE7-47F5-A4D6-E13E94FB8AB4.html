@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="Decision Table Profiling with Sample Data" name="DC.Title" /><meta content="Use profiling to verify that the decision table generates the expected results based on a sample dataset." name="abstract" /><meta content="Use profiling to verify that the decision table generates the expected results based on a sample dataset." name="description" /><meta content="decision tables, overview of rule profiling" name="DC.subject" /><meta content="decision tables, overview of rule profiling" name="keywords" /><meta content="GUID-711F12DF-8830-4829-9D0E-67E169288D78.html" name="DC.Relation" scheme="URI" /><meta content="GUID-C2F0D926-9DCF-47F1-BE8E-7D68B4A9A542.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E7F37F49-E153-4CAC-8448-E0D87DC2EA52.html" name="DC.Relation" scheme="URI" /><meta content="GUID-3473BC83-429C-4E3C-AC36-F493F6763EBD.html" name="DC.Relation" scheme="URI" /><meta content="GUID-F80342EC-9D92-4151-BAB7-CC26AFAD4B25.html" name="DC.Relation" scheme="URI" /><meta content="GUID-4E8D29A1-5C03-41DF-8B28-5208483AEA38.html" name="DC.Relation" scheme="URI" /><meta content="GUID-64C6EE9C-910D-407D-9809-5968BE2F9492.html" name="DC.Relation" scheme="URI" /><meta content="GUID-9FB99975-10A1-43E5-9613-AB943FDEA2E4.html" name="DC.Relation" scheme="URI" /><meta content="GUID-DF77E8D1-D35C-4E12-84F9-16AA5AD6E5FA.html" name="DC.Relation" scheme="URI" /><meta content="GUID-B8242AE2-3141-45A2-B8D1-8B04448E8E44.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-5A38691A-9DE7-47F5-A4D6-E13E94FB8AB4" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Decision Table Profiling with Sample Data</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-5A38691A-9DE7-47F5-A4D6-E13E94FB8AB4"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Decision Table Profiling with Sample Data</h1>
+<div class="body conbody"><div class="abstract"> 
+	  <span class="shortdesc">Use profiling to verify that the decision table generates the expected results based on a sample dataset. 
+	 </span>
+ 
+  </div>
+ 
+	 <p class="p">When profiling is run, the data in the dataset is evaluated by the condition expressions. The amount of data that matches the conditions is displayed in the Decision Table editor as a percentage or numeric count of the data. You can run the rule profiler as needed or use real-time profiling to provide feedback as the values are edited in the decision table. 
+	 </p>
+ 
+	 <p class="p">The dataset file must be a CSV (comma-separated values) file. You can create your own dataset in an external application, such as text editor, or you can use the Rule Profiling menu to generate a sample CSV dataset file and then modify the values. 
+	 </p>
+ 
+  </div>
+<div class="related-links">
+<strong>Covered Topics</strong><ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="GUID-C2F0D926-9DCF-47F1-BE8E-7D68B4A9A542.html">Real-time Profiling</a></strong><br />
+By default, profiling occurs in the background while the decision table is edited. 
+	 </li>
+<li class="link ulchildlink"><strong><a href="GUID-E7F37F49-E153-4CAC-8448-E0D87DC2EA52.html">Dataset Requirements for Decision Table Profiling</a></strong><br />
+The dataset used for profiling must be a CSV file that conforms to specific requirements. You can create your own dataset in an external application or generate a sample dataset and modify the values. 
+	 </li>
+<li class="link ulchildlink"><strong><a href="GUID-3473BC83-429C-4E3C-AC36-F493F6763EBD.html">Creating a Sample Dataset for Decision Table Profiling</a></strong><br />
+You can create a sample dataset based on the current decision table. It shows the correct format for the dataset and includes a column header and column of data for each condition in a decision table. After the sample dataset is generated, you can modify the values as required. 
+	 </li>
+<li class="link ulchildlink"><strong><a href="GUID-F80342EC-9D92-4151-BAB7-CC26AFAD4B25.html">Running Decision Table Profiling</a></strong><br />
+To run the profiler, attach a dataset to run against the conditions in the decision table. Only one dataset can be attached to a decision table. The dataset remains attached until you attach another valid dataset or you close the Decision Table editor. 
+	 </li>
+<li class="link ulchildlink"><strong><a href="GUID-4E8D29A1-5C03-41DF-8B28-5208483AEA38.html">Profiling Results Display Options</a></strong><br />
+<span class="ph">Rule profiling results are displayed based on the decision table type and the display options.</span> 
+	 </li>
+<li class="link ulchildlink"><strong><a href="GUID-64C6EE9C-910D-407D-9809-5968BE2F9492.html">Generating Profiling Reports</a></strong><br />
+</li>
+<li class="link ulchildlink"><strong><a href="GUID-9FB99975-10A1-43E5-9613-AB943FDEA2E4.html">Setting Profiling Options</a></strong><br />
+ Set the profiling options in the 
+		<span class="keyword wintitle">Set Display Options</span> window. The selections made in this window are persisted only until the Decision Table editor is closed. 
+	 </li>
+<li class="link ulchildlink"><strong><a href="GUID-DF77E8D1-D35C-4E12-84F9-16AA5AD6E5FA.html">Enabling and Disabling Decision Table Profiling</a></strong><br />
+Profiling is enabled by default. When profiling is disabled, the profiling results are removed from the decision table. The current dataset remains attached and you can still generate and view the profiling report. 
+	 </li>
+<li class="link ulchildlink"><strong><a href="GUID-B8242AE2-3141-45A2-B8D1-8B04448E8E44.html">Troubleshooting</a></strong><br />
+These topics provide troubleshooting assistance. 
+	 </li>
+</ul>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-711F12DF-8830-4829-9D0E-67E169288D78.html">Decision Table Rule Profiling and Filtering Rules</a></div>
+</div>
+
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

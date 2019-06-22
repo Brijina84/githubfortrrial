@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="Example: Adding an Assignment Event" name="DC.Title" /><meta content="An assignment event assigns or sets a value to a variable or field in the application BOM. You can use an assignment event in both, sub-process and process or workflow." name="abstract" /><meta content="An assignment event assigns or sets a value to a variable or field in the application BOM. You can use an assignment event in both, sub-process and process or workflow." name="description" /><meta content="events, assignment, adding" name="DC.subject" /><meta content="events, assignment, adding" name="keywords" /><meta content="GUID-C98C879B-F48D-49FF-839C-C67795679164.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-31220157-F155-4721-B420-0249D33BB38A" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Example: Adding an Assignment Event</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-31220157-F155-4721-B420-0249D33BB38A"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Example: Adding an Assignment Event</h1>
+<div class="body taskbody"><div class="abstract"> 
+	  <span class="shortdesc">An assignment event assigns or sets a value to a variable or field in the application BOM. You can use an assignment event in both, sub-process and process or workflow. 
+	 </span>
+</div>
+ 
+	 <div class="context"> In the following example, create a sub-process with a few input, output, and local variables. Add a Get Data task which fetches data from the application BOM, and then add an assignment event. You can also assign the output of the Get Data Task to the variables. Then create a process and add the sub-process that you have created. 
+	 </div> 
+	 <ol class="ol steps" id="GUID-31220157-F155-4721-B420-0249D33BB38A__GUID-982F344E-0B7B-4204-AB17-29ECEC3E10BB"><li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_A1DA9CA7905C4D2BA52B6CE3DA38226B"> 
+		  <span class="ph cmd"> Drag and drop the Start event. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_10CAAA164BF3455F9E71C676DE08CF3D"> 
+		  <span class="ph cmd">Drag and drop the Get Data task, and then connect the Start event to the Get Data task.
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_C1C58934BD1D4B0B9924C501A3C0311D">
+		  <span class="ph cmd">In the PROPERTIES pane, click ADD PROPERTY to add a parameter.
+		  </span>
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_777549C6F6304BA385BC79C351F1D7AD">
+		  <span class="ph cmd">Add a name for the parameter and click the Edit icon for the Value field to open the Select Path dialog box.
+		  </span>
+		  <div class="itemgroup stepresult">The dialog box lists all the objects in the application BOM.
+		  </div>
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_E57810CFA27E4903881EB47C9720E774">
+		  <span class="ph cmd">Select the field in the BOM from which you want to retrieve the value and store in the parameter that you added in the previous step.
+		  </span>
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_5E33C06BAB10481291A99EACB154E79D">
+		  <span class="ph cmd">Click MANAGE PARAMETERS to open the Manage Parameters page.
+		  </span>
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_5F6010C27E444C8498A6E41281D3666E">
+		  <span class="ph cmd">Add input, output, and local parameters for the sub-process.
+		  </span>
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_60B9AA2D789A4FD4B788191795373275">
+		  <span class="ph cmd">Select Assignment from the ELEMENTs list and drag it onto the canvas, and then connect the Get Data task to it.
+		  </span>
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_AE66D4C071054EDBB127F638A4A98608">
+		  <span class="ph cmd">Assign values to parameters in the ASSIGNMENT PROPERTIES pane. To assign a value to a parameter, perform the following steps: 
+		  </span>
+		  <ol class="ol substeps" id="GUID-31220157-F155-4721-B420-0249D33BB38A__SUBSTEPS_6A92D6308A31409FB38DA588BB9C2245" type="a">
+			 <li class="li substep substepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__SUBSTEP_1DEABEB6582E42928676D34B847C8B60">
+				<span class="ph cmd">From the Assign list, select the parameter to which the value is assigned.
+				</span>
+			 </li>
+
+			 <li class="li substep substepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__SUBSTEP_4EF9DE6DC1B94101845FA232AD6539EF">
+				<span class="ph cmd">From the To list, select the parameter whose value is assigned. 
+				</span>
+				<div class="itemgroup info">You can specify any additional operation on the value being assigned to the parameter or variable. 
+				</div>
+			 </li>
+
+			 <li class="li substep substepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__SUBSTEP_795DD957273F475E8FA1161517C98A5F">
+				<span class="ph cmd">To add another parameter for assignment, click ADD PROPERTY and repeat Steps a and b.
+				</span>
+			 </li>
+
+		  </ol>
+
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_42E153945E6C468595B697B47BE9EF19">
+		  <span class="ph cmd">Click PUBLISH.
+		  </span>
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_1AF0067700DA42A695F9691F6D0F5A32">
+		  <span class="ph cmd">Create a process.
+		  </span>
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_DF5993BBEB184D2DBE353A86F7230807"> 
+		  <span class="ph cmd"> Drag and drop the Start event. 
+		  </span>
+		</li>
+<li class="li step stepexpand" id="GUID-31220157-F155-4721-B420-0249D33BB38A__STEP_7B4A85011CE541FC9BD3D2737288624A">
+		  <span class="ph cmd">
+		  </span><br />
+		  <div class="itemgroup stepresult">
+		  </div>
+		</li>
+</ol>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-C98C879B-F48D-49FF-839C-C67795679164.html" title="An event is the smallest and most basic element in a business process or workflow. There are seven generic predefined events that you can use to in a workflow or a subflow. Start and stop are two events that must be present in a workflow or a subflow.">Events</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

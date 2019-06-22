@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="Creating a Score Model from PMML File" name="DC.Title" /><meta content="Create a score model by importing a scorecard PMML file to augment your decision logic." name="abstract" /><meta content="Create a score model by importing a scorecard PMML file to augment your decision logic." name="description" /><meta content="importing PMML, scorecard model, PMML file" name="DC.subject" /><meta content="importing PMML, scorecard model, PMML file" name="keywords" /><meta content="GUID-64BB4F5E-975A-4179-820C-81027C590341.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Creating a Score Model from PMML File</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Creating a Score Model from PMML File</h1>
+<div class="body taskbody"><div class="abstract"> 
+	  <span class="shortdesc">Create a score model by importing a scorecard PMML file to augment your decision logic.
+	 </span>
+</div>
+ 
+	 <div class="context">Scorecard PMML files can contain reason code lists. When reason code lists are detected during the PMML import, a reason code list is automatically generated. 
+		<table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__GUID-BDA33E23-7CD4-4A45-BD7F-6C456D918762"><b>Note</b> PMML files created by the Model Builder only can be imported. Model Builder is a product for developing predictive models. Model Builder produces PMML that conforms to the Mining model specification.
+		</div></td></tr></table>
+
+	 </div> 
+	 <ol class="ol steps" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__GUID-FA8E91EE-1C3C-441B-876E-2E2A9E0D7FCB"><li class="li step stepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__STEP_0A74FF7BE1F646798B521BF733FD4FB8"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">Import PMML</span>. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__STEP_5E14CD496B6D4FCEA3F80B14F93B928F"> 
+		  <span class="ph cmd">Specify a name for the score model that is created from the PMML file that you import. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__STEP_A6C45039571F47EB9536717572277A7D"> 
+		  <span class="ph cmd">Browse to the location of the file and select the PMML file that you want to import, or drag and drop the file on to the drop zone. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__STEP_1834F1D02D6844B9BE2E92E933FCE9CC"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">NEXT</span>. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__STEP_619CE982741D4B7EA78B37D854C9E23A"> 
+		  <span class="ph cmd">Map the variables in the file to the variables that exist in your object model. Perform the following steps: 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__SUBSTEPS_60EDD1D0BB51478AB1CF95A9E4C71DB5" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__SUBSTEP_2863BE380C8240BBA4561E1B031AEBC0_unique_1"> 
+				<span class="ph cmd">For each variable, click the object model icon to view the list of objects and references in your object model. 
+				</span> 
+				<div class="itemgroup info">The node elements in the schema, along with their child elements are listed under 
+				  <span class="ph uicontrol">Objects and References</span> column. When you expand a node, you can view the child elements. For each element, the 
+				  <span class="ph uicontrol">Select Field or Data Method</span> column lists all fields or data methods which have the same data type as the FSML file variable. 
+				  <table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__GUID-EE7104AD-FB87-4C3C-8586-9F2D856B3B3F"><b>Note</b> A data method has an icon before its name to distinguish it from a field. 
+				  </div></td></tr></table>
+ 
+				</div> 
+			 </li>
+ 
+			 <li class="li substep substepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__SUBSTEP_2DE036E8F0A546F3B53DDD013B46EEC6_unique_1"> 
+				<span class="ph cmd">Select the element that has the required field or data method, map the variable to either a field or a data method, and then click 
+				  <span class="ph uicontrol">SELECT</span>. 
+				</span> 
+			 </li>
+ 
+			 <li class="li substep substepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__SUBSTEP_535609874CDE4B6BB57F49B6D3AC23AF_unique_1"> 
+				<span class="ph cmd">Repeat Step 
+				  <strong class="ph b">a</strong> and 
+				  <strong class="ph b">b</strong> and complete the mapping for all the variables. 
+				</span> 
+			 </li>
+ 
+		  </ol>
+ 
+		  <div class="itemgroup info">You can also select a DOR 
+		  </div> 
+		</li>
+<li class="li step stepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__STEP_B389EF0CD7BA429EA34B197DF4876713_unique_1"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">NEXT</span>. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-085CBE46-D6D2-44AE-AE89-FC7332D86CB4__STEP_7BFE359194A64E9699E7AE2B5E0676AC_unique_1"> 
+		  <span class="ph cmd">The Import Summary page displays a read-only report of the selections made in the previous pages. Review the Import Summary and click 
+			 <span class="ph uicontrol">IMPORT</span>. 
+		  </span> 
+		  <div class="itemgroup info">To change your mappings, click 
+			 <span class="ph uicontrol">PREVIOUS</span> and edit your selection. 
+		  </div> 
+		</li>
+</ol>
+ 
+	 <div class="result">The scorecard and reason code list are automatically checked in. You will need to check them out first in order to edit them. The reason code list is also added to the Score Model Reasons list. 
+	 </div> 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-64BB4F5E-975A-4179-820C-81027C590341.html" title="Use the options on the list and properties pages for score models to create, copy, and delete score models, and define characteristics and bins.">Managing Score Models</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

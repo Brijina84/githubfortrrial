@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="Adding a Router Gateway" name="DC.Title" /><meta content="When you want the workflow to follow a processing sequence based on the evaluation of a condition, add a condition gateway, add condition values, and the processing sequence for each of the condition values being true. The condition values are based on field values in the OM application BOM." name="abstract" /><meta content="When you want the workflow to follow a processing sequence based on the evaluation of a condition, add a condition gateway, add condition values, and the processing sequence for each of the condition values being true. The condition values are based on field values in the OM application BOM." name="description" /><meta content="gateways, adding router gateway" name="DC.subject" /><meta content="gateways, adding router gateway" name="keywords" /><meta content="GUID-AE77B330-6734-4EA1-B7CF-D05EB2EF9EBD.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Adding a Router Gateway</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Adding a Router Gateway</h1>
+<div class="body taskbody"><div class="abstract"> 
+	  <span class="shortdesc">When you want the workflow to follow a processing sequence based on the evaluation of a condition, add a condition gateway, add condition values, and the processing sequence for each of the condition values being true. The condition values are based on field values in the OM application BOM. 
+	 </span>
+</div>
+ 
+	 <div class="context"> In the following example, add a router gateway after the ExperianUSConsumer sub-process. The ExperianUSConsumer sub-process returns some data which is stored in the application BOM. 
+		<table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__GUID-538A38E4-C309-48E2-B543-76329838BAE8"><b>Note</b> With a router gateway, you can add conditions on only one field value in the BOM.
+		</div></td></tr></table>
+
+	 </div> 
+	 <ol class="ol steps" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__GUID-DD3C2CD0-E109-4543-A7D0-4733A3E0EFB9"><li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_0C76AD918E40449EBCA2C38F31F41731_unique_1"> 
+		  <span class="ph cmd"> Drag and drop the Start event. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_A592D093A77A4A5D98C6455B53AD9BE3_unique_1"> 
+		  <span class="ph cmd">Drag and drop the ExperianUSConsumer sub-process, and connect the Start event to ExperianUSConsumer. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_51992E8B22CC4A5DBFB3F8FEFC41A928_unique_1"> 
+		  <span class="ph cmd">Drag and drop a Router gateway and connect it to ExperianUSConsumer. 
+		  </span> 
+		  <div class="itemgroup info">The Otherwise condition is added by default. 
+			 <table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__GUID-95DFE25C-DFB9-45D1-817A-E0143C754FFF"><b>Note</b> For scenarios where none of the conditions are met, the Otherwise sequence is triggered. 
+			 </div></td></tr></table>
+ 
+		  </div> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_8F8448C86E794FADAE30C1A27E0C3FCE"> 
+		  <span class="ph cmd">To select the object in the application BOM on which the condition is to be applied, click the Edit icon next to the OM Application Path field. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_9C65733224314D62A7488BBA9D6F4113"> 
+		  <span class="ph cmd">Select the data field in the application BOM, which contains a value returned by the ExperianUSConsumer and you want to add conditions on that value. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_4E452161D9234A17A13E82FA6E77DB25"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">SELECT</span>. 
+		  </span> 
+		  <div class="itemgroup info">You can now add conditions on the value in the field referenced by its XPath, as seen in the OM Application Path. 
+		  </div> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_24631B251B3C4AD983805C92157F54CA_unique_1"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">ADD CONDITION</span> and specify a name for the condition. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_75E5151B09FD40388B84820545071D88"> 
+		  <span class="ph cmd">Select the operator for the condition and then type the value for the condition or comparison. The operators allowed are Equals, Not Equals, Greater Than, Less Than, Greater Than Equal, and Less Than Equal. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_35CBC13B36794E4B9776233F1D69C8EA"> 
+		  <span class="ph cmd">Select what the next task from the Next Task dropdown list. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_084447E4EA6D441DA7E7A4846BFEF224_unique_1"> 
+		  <span class="ph cmd">To add more conditions, follow Steps 7-9. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_48580A857C03405AAEA655FE456E4B84_unique_1"> 
+		  <span class="ph cmd">Add the next sequence for the Otherwise condition. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-05B4042E-EF40-40DF-A048-3131E525B3CB__STEP_C4151D8A64CE4478A3D430DB46504531_unique_1"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">PUBLISH</span> to validate and publish the workflow or business process. 
+		  </span> 
+		</li>
+</ol>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-AE77B330-6734-4EA1-B7CF-D05EB2EF9EBD.html" title="Gateways control the flow of execution in a business process. Use a gateway to control the divergence of convergence of multiple sequence flows.">Gateways</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

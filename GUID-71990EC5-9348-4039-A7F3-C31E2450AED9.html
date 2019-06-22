@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="Object-based Processing Loops" name="DC.Title" /><meta content="An object-based processing loop is used to execute a statement sequence on all instances of a specific context path, relative to the active context at the point in the expression where the loop is inserted. This type of loop is most commonly used when the data you need is in an object that is a child of the current context." name="abstract" /><meta content="An object-based processing loop is used to execute a statement sequence on all instances of a specific context path, relative to the active context at the point in the expression where the loop is inserted. This type of loop is most commonly used when the data you need is in an object that is a child of the current context." name="description" /><meta content="processing loops, object-based, object-based processing loops" name="DC.subject" /><meta content="processing loops, object-based, object-based processing loops" name="keywords" /><meta content="GUID-A5679073-E4A1-4FC2-BA62-14C3F9E672AA.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Object-based Processing Loops</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Object-based Processing Loops</h1>
+<div class="body conbody"><div class="abstract"> 
+	  <span class="shortdesc"> An object-based processing loop is used to execute a statement sequence on all instances of a specific context path, relative to the active context at the point in the expression where the loop is inserted. This type of loop is most commonly used when the data you need is in an object that is a child of the current context. 
+	 </span>
+For example, if your context is 
+	 <samp class="ph codeph">applicantFinancial</samp>, which has a child object named 
+	 <samp class="ph codeph">income</samp>, you can use an object-based processing loop to traverse through all 
+	 <samp class="ph codeph">income</samp> objects associated with the 
+	 <samp class="ph codeph">applicantFinancial</samp> object. 
+  </div>
+ 
+	 <div class="p" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111877">Object-based processing loops must conform to the syntax shown in the following statement: 
+		<pre class="pre codeblock">
+for every &lt;context_path&gt; relative to &lt;object_type&gt; do &lt;statement_sequence&gt; endfor
+</pre>
+ 
+	 </div>
+ 
+	 <div class="p" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111879">Where: 
+	 <ul class="ul"> 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111882"><samp class="ph codeph">&lt;context_path&gt;</samp> is the current active context. For more information, see 
+		  <a class="xref" href="GUID-ACB36F11-308D-433C-AB0F-B05180EF9F38.html">Active Context in Loop Statements</a>. 
+		</li>
+ 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111884"><samp class="ph codeph">&lt;object_type&gt;</samp> is the parent object in the active context. For example, if 
+		  <samp class="ph codeph">Application.creditApplication</samp> is the active context, 
+		  <samp class="ph codeph">&lt;object_type&gt;</samp> is 
+		  <samp class="ph codeph">Application</samp>. 
+		</li>
+ 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111885"><samp class="ph codeph">&lt;statement_sequence&gt;</samp> is a simple or complex statement, conditional statement, object-based processing loop, or data object reference-based processing loop that is executed once for each object in the context specified by 
+		  <samp class="ph codeph">&lt;context_path&gt;</samp>. 
+		</li>
+ 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111886">If there are multiple statements within 
+		  <samp class="ph codeph">statement_sequence</samp>, each statement prior to the last must end with a semicolon. The comma is optional for the last statement. 
+		</li>
+ 
+	 </ul>
+ 
+	 </div>
+ 
+	 <p class="p" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111888">The following data method is an example of an object-based processing loop. 
+	 </p>
+ 
+	 
+<div class="tablenoborder"><table border="1" cellpadding="4" cellspacing="0" class="table" frame="border" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111891" rules="all" summary=""><caption><span class="tablecap">Object-based Processing Loop</span></caption> 
+		 
+		 
+		<thead align="left" class="thead"> 
+		  <tr class="row"> 
+			 <th class="entry" id="d116784e111" valign="top" width="21%">Item 
+			 </th>
+ 
+			 <th class="entry" id="d116784e114" valign="top" width="79%">Value 
+			 </th>
+ 
+		  </tr>
+ 
+		</thead>
+ 
+		<tbody class="tbody"> 
+		  <tr class="row" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111899"> 
+			 <td class="entry" headers="d116784e111 " valign="top" width="21%">Name 
+			 </td>
+ 
+			 <td class="entry" headers="d116784e114 " valign="top" width="79%">dm_EvaluateApplicantFinancial 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111903"> 
+			 <td class="entry" headers="d116784e111 " valign="top" width="21%">Description 
+			 </td>
+ 
+			 <td class="entry" headers="d116784e114 " valign="top" width="79%">Calculates the total grossMonthly income for each applicant. 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111907"> 
+			 <td class="entry" headers="d116784e111 " valign="top" width="21%">Context 
+			 </td>
+ 
+			 <td class="entry" headers="d116784e114 " valign="top" width="79%">Application 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111911"> 
+			 <td class="entry" headers="d116784e111 " valign="top" width="21%">Result Type 
+			 </td>
+ 
+			 <td class="entry" headers="d116784e114 " valign="top" width="79%">numeric 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111915"> 
+			 <td class="entry" headers="d116784e111 " valign="top" width="21%">Local Variable 
+			 </td>
+ 
+			 <td class="entry" headers="d116784e114 " valign="top" width="79%"> 
+				<pre class="pre codeblock">
+Name                    Data Type              Initial Value
+xGrossMonthlyIncome     numeric                0
+</pre>
+ 
+			 </td>
+ 
+		  </tr>
+ 
+		  <tr class="row" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111920"> 
+			 <td class="entry" headers="d116784e111 " valign="top" width="21%">Expression 
+			 </td>
+ 
+			 <td class="entry" headers="d116784e114 " valign="top" width="79%"> 
+				<samp class="ph codeph">result := 0;</samp> 
+				<pre class="pre codeblock">
+for every Application.creditApplication.personalApplicant.applicantFinancial.income relative to applicantFinancial do
+xGrossMonthlyIncome := xGrossMonthlyIncome + grossMonthlyIncome;
+endfor
+applicantFinancial.totalGrossMonthlyIncome := xGrossMonthlyIncome;
+result := xGrossMonthlyIncome;
+</pre>
+ 
+			 </td>
+ 
+		  </tr>
+ 
+		</tbody>
+ 
+	 </table>
+</div>
+ 
+	 <div class="p" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111931">This expression reads as follows: 
+	 <ol class="ol" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__GUID-E676088F-ED7B-4151-B14A-C21B07092AF1"> 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111932">Assign the result an initial value of 
+		  <samp class="ph codeph">0</samp>. 
+		</li>
+ 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111933">For every 
+		  <samp class="ph codeph">income</samp> object whose parent is a 
+		  <samp class="ph codeph">applicantFinancial</samp> object (whose parent in the 
+		  <samp class="ph codeph">Application</samp> object), assign to result the value of 
+		  <samp class="ph codeph">result</samp> plus the value of 
+		  <samp class="ph codeph">grossMonthlyIncome</samp>. 
+		</li>
+ 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111934">Stop when all such 
+		  <samp class="ph codeph">income</samp> objects have been evaluated. 
+		</li>
+ 
+	 </ol>
+ 
+	 </div>
+ 
+	 <div class="p" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111935">The following keywords are used in this statement: 
+	 <ul class="ul"> 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111936"><samp class="ph codeph">for every</samp> and 
+		  <samp class="ph codeph">endfor</samp> show the beginning and end of the statement and direct the system to repeat the operation, subject to any constraints that follow. 
+		</li>
+ 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111937"><samp class="ph codeph">relative to</samp> constrains the loop to only evaluate 
+		  <samp class="ph codeph">income</samp> objects whose parent is a 
+		  <samp class="ph codeph">applicantFinancial</samp> object whose parent is the 
+		  <samp class="ph codeph">Application</samp> object. 
+		</li>
+ 
+		<li class="li" id="GUID-71990EC5-9348-4039-A7F3-C31E2450AED9__WP1111938"><samp class="ph codeph">do</samp> directs the system to execute the next statement sequence. 
+		</li>
+ 
+	 </ul>
+ 
+	 </div>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-A5679073-E4A1-4FC2-BA62-14C3F9E672AA.html" title="Processing loops are instructions that repeat until some condition is met. They allow you to incorporate fields and data methods from non-context domain model objects into your current data method, enabling more powerful data methods to be written.">Processing Loop Statements</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

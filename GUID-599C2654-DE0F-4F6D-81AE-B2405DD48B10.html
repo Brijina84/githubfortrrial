@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="Adding a Condition Gateway" name="DC.Title" /><meta content="When you want the workflow to follow a processing sequence based on the evaluation of a condition, add a condition gateway, add condition values, and the processing sequence for each of the condition values being true." name="abstract" /><meta content="When you want the workflow to follow a processing sequence based on the evaluation of a condition, add a condition gateway, add condition values, and the processing sequence for each of the condition values being true." name="description" /><meta content="gateways, adding condition gateway" name="DC.subject" /><meta content="gateways, adding condition gateway" name="keywords" /><meta content="GUID-AE77B330-6734-4EA1-B7CF-D05EB2EF9EBD.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Adding a Condition Gateway</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Adding a Condition Gateway</h1>
+<div class="body taskbody"><div class="abstract"> 
+	  <span class="shortdesc">When you want the workflow to follow a processing sequence based on the evaluation of a condition, add a condition gateway, add condition values, and the processing sequence for each of the condition values being true. 
+	 </span>
+</div>
+ 
+	 <div class="context"> Condition values to be evaluated are based on the available outputs of the previous step. For example, one of the available outputs of the previous step is a decision Decline application, you can specify one sequence of steps when Decline is true and another sequence of steps when Decline is false. By default, when you add a condition gateway, the designer adds a scenario that you needs to be configured if none of the conditions are true. 
+		<table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__GUID-AA3310F0-7A2B-43A8-B50F-96DF0D3F1243"><b>Note</b>  
+		</div></td></tr></table>
+ 
+		<p class="p">In the following example, add a router gateway after the MakeDecision sub-process. 
+		</p>
+ 
+	 </div> 
+	 <ol class="ol steps" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__GUID-1640750A-7AC0-418F-B326-2C9FB77FE843"><li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_0C76AD918E40449EBCA2C38F31F41731"> 
+		  <span class="ph cmd"> Drag and drop the Start event. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_A592D093A77A4A5D98C6455B53AD9BE3"> 
+		  <span class="ph cmd">Drag and drop the MakeDecision sub-process, and connect the Start event to MakeDecision. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_51992E8B22CC4A5DBFB3F8FEFC41A928"> 
+		  <span class="ph cmd">Drag and drop a Condition gateway and connect it to MakeDecision. 
+		  </span> 
+		  <div class="itemgroup info">The Otherwise condition is added by default. 
+			 <table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__GUID-9E1CC815-76C0-41FC-AF25-4F65D35E2FD7"><b>Note</b> For scenarios where none of the conditions are met, the Otherwise sequence is triggered. 
+			 </div></td></tr></table>
+ 
+		  </div> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_24631B251B3C4AD983805C92157F54CA"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">ADD CONDITION</span>, and specify a name for the condition. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_9F936C407A1342DEA262296BCC0A9A77"> 
+		  <span class="ph cmd">From the list of available outputs, to select a condition and specify the condition value, click the expression icon. 
+		  </span> 
+		  <div class="itemgroup info">The EDIT EXPRESSION dialog opens. The MakeDecision subprocess has four available outputs, as seen in the image below: 
+		  </div> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_BA958700421641FAB7E09A9F0D230EB8"> 
+		  <span class="ph cmd">Click MakeDecision.Decision from the Available Outputs list. 
+		  </span> 
+		  <div class="itemgroup stepresult">The output appears in the Output Property field. 
+		  </div> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_171E91319284421B934FEA37C00AAB4B"> 
+		  <span class="ph cmd">Select the operator for the condition and then type the value (Decline) for the condition or comparison. The operators allowed are Equals, Not Equals, Greater Than, Less Than, Greater Than Equal, and Less Than Equal. 
+		  </span> 
+		  <div class="itemgroup stepresult">For example, select the operator Equals and type the Value True. 
+		  </div> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_94C42EDE931D458EBAD98A7A32E54296"> 
+		  <span class="ph cmd">Click DONE. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_40D8DE718B53441197258DC00379B961"> 
+		  <span class="ph cmd">If the condition equates to true, select what the next task from the Next Task dropdown list. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_084447E4EA6D441DA7E7A4846BFEF224"> 
+		  <span class="ph cmd">To add more conditions, follow Steps 4-9. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_48580A857C03405AAEA655FE456E4B84"> 
+		  <span class="ph cmd">Add the next sequence for the Otherwise condition. 
+		  </span> 
+		</li>
+<li class="li step stepexpand" id="GUID-599C2654-DE0F-4F6D-81AE-B2405DD48B10__STEP_C4151D8A64CE4478A3D430DB46504531"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">PUBLISH</span> to validate and publish the workflow or business process. 
+		  </span> 
+		</li>
+</ol>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-AE77B330-6734-4EA1-B7CF-D05EB2EF9EBD.html" title="Gateways control the flow of execution in a business process. Use a gateway to control the divergence of convergence of multiple sequence flows.">Gateways</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>

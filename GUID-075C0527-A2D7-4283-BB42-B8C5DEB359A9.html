@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="EN-US"><head data-approot=""><!-- saved from url=(0014)about:internet --><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2005" name="copyright" /><meta content="(C) Copyright 2005" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="Example: Adding an Error Handler Event" name="DC.Title" /><meta content="An error handler catches an error in a task, call-activity, or sub-process and specifies how the processing should flow when the error occurs. You can add multiple error handlers in a workflow. An error handler must be connected to the error code and the construct or the node that throws the error. An error handler catches specified errors or all errors, and specifies the error handling logic and the processing flow when these errors occur." name="abstract" /><meta content="An error handler catches an error in a task, call-activity, or sub-process and specifies how the processing should flow when the error occurs. You can add multiple error handlers in a workflow. An error handler must be connected to the error code and the construct or the node that throws the error. An error handler catches specified errors or all errors, and specifies the error handling logic and the processing flow when these errors occur." name="description" /><meta content="error handler, adding, events, error handler" name="DC.subject" /><meta content="error handler, adding, events, error handler" name="keywords" /><meta content="GUID-C98C879B-F48D-49FF-839C-C67795679164.html" name="DC.Relation" scheme="URI" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9" name="DC.Identifier" /><meta content="EN-US" name="DC.Language" /><title>Example: Adding an Error Handler Event</title><link href="static/screen.css?CpZb8t6v" rel="stylesheet" /><link href="static/print.css?EupNBz/e" media="print" rel="stylesheet" /><link rel="icon" href="static/favicon.ico" sizes="16x13" type="image/x-icon"/><script src="static/head.js?p2mB0fzf" type="text/javascript">           </script></head><body class="fixed" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9"><div class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"> <div class="row row-offcanvas row-offcanvas-left" id="header"> <div class="col-md-3 col-md-push-9 sidebar-offcanvas" id="search_form_container"><form class="navbar-form" id="search_form" role="search"><div class="input-group"><input class="form-control" id="search_textbox" type="text" placeholder="Enter search terms"><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></input></div></form></div><div class="col-md-3 col-md-pull-3" id="logo_container"><button class="visible-xs visible-sm navbar-toggle pull-left" data-toggle="offcanvas"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html"><img id="logo" alt="logo" src="static/logo.png" /></a></div><div class="col-md-6 col-md-pull-3 hidden-xs hidden-sm" id="pubtitle_container"><div id="pubtitle">Origination Manager Help</div></div></div></div></div><div class="container-fluid"><div class="row row-offcanvas row-offcanvas-left"><div class="col-md-3 sidebar-offcanvas" id="leftbar"><div class="panel-group" id="accordion"><div class="panel panel-default" id="toc_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#toc_pane"><span>Contents</span></a></h4></div><div class="panel-collapse collapse" id="toc_pane" data-breadcrumbtext="BreadCrumb TOC"><div class="panel-body"><nav id="toc_nav"></nav></div></div></div><div class="panel panel-default" id="index_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#index_pane"><span>Index</span></a></h4></div><div class="panel-collapse collapse" id="index_pane" data-breadcrumbtext="BreadCrumb Index"><div class="panel-body"><nav id="index_nav"></nav></div></div></div><div class="panel panel-default" id="glossary_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#glossary_pane"><span>Glossary</span></a></h4></div><div class="panel-collapse collapse" id="glossary_pane" data-breadcrumbtext="BreadCrumb Glossary"><div class="panel-body"><nav id="glossary_nav"></nav></div></div></div><div class="panel panel-default" id="search_container"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#search_pane"><span>Search Results</span><span class="badge pull-right" id="search_count"></span></a></h4></div><div class="panel-collapse collapse" id="search_pane" data-breadcrumbtext="BreadCrumb Search"><div class="panel-body"><nav id="search_nav"><div id="search_message">No search has been performed.</div></nav></div></div></div></div></div><div class="col-md-9" id="center"><div id="toolbar"><a id="button_back" href="#" title="Previous topic"><span class="fico-iconcircle-left4"></span></a><a id="button_forward" href="#" title="Next topic"><span class="fico-iconcircle-right4"></span></a><a id="button_highlighting" href="#" title="Toggle Highlighting"><span class="fico-iconpencil"></span></a><a id="button_print" href="#" title="Print"><span class="fico-iconprint-one"></span></a></div><div class="btn-group btn-breadcrumb" id="breadcrumbs"> <a class="btn btn-default" id="crumb_home" href="index.html" title="Home"><i class="glyphicon toc_pane_img" id="crumb_home_image">   </i><span id="crumb_home_text">Home</span></a><div class="crumb btn btn-default" id="crumb_tooltip">...</div></div><article><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p></noscript><div id="thumbnailDialog"></div>
+
+<h1 class="title topictitle1">Example: Adding an Error Handler Event</h1>
+<div class="body taskbody"><div class="abstract"> 
+	  <span class="shortdesc">An error handler catches an error in a task, call-activity, or sub-process and specifies how the processing should flow when the error occurs. You can add multiple error handlers in a workflow. An error handler must be connected to the error code and the construct or the node that throws the error. An error handler catches specified errors or all errors, and specifies the error handling logic and the processing flow when these errors occur. 
+	 </span>
+</div>
+ 
+	 <div class="context"> 
+		<div class="p">In the following example, you add an error handler for the call-activity, REST service. Assume that the REST service throws three errors OM001, OM002, and OM003. Add an error handler for two of the errors, OM001 and OM002, and then add an event (human activity) to take the processing flow in another direction if OM001 or OM002 occur. 
+		  <table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__GUID-01E518E9-FD3D-48EC-917A-8A2C9036612E"><b>Note</b> The same error code might be thrown by more than one construct. To connect an error handler to a particular error, you must specify the error code and the construct or the node that throws the error. 
+		  </div></td></tr></table>
+ 
+		  <table><tr><td align="center" valign="top"><div class="notegraphic"><img src="static/note.png" /></div></td><td valign="top"><div class="note" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__GUID-D7C8336D-4FD0-43F6-9D3F-A92BFCD159AF"><b>Note</b> A construct or node can throw more than one error. For example, a call to a REST service can give multiple errors. In such cases, you can specify a comma-separate list of error codes and specify the processing flow when those errors occur. 
+		  </div></td></tr></table>
+ 
+		</div>
+ 
+	 </div> 
+	 <ol class="ol steps" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__GUID-0EEE76BF-5406-4D50-A6CB-BB12435D6B13"><li class="li step" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__STEP_E07193271501423F907CB4AE85873849"> 
+		  <span class="ph cmd">Drag and drop the Start event. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__STEP_CA5100BF0F7A4BA880497E7000A69661"> 
+		  <span class="ph cmd">Drag and drop the REST service call-activity, and than connect the Start event to the call-activity. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__STEP_4AAD1E0D61A3412C8DEE9A1B7D5AF540"> 
+		  <span class="ph cmd">Drag and drop the End event, and then connect the sub-process to it. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__STEP_D55A8570BA8B4BB3813A29B8020E8E07"> 
+		  <span class="ph cmd">Drag and drop the Error Handler event. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__STEP_A91B0A012A6D4C479291574DB65F2F11"> 
+		  <span class="ph cmd"> In the Properties pane for the Error Handler, enter OM 001, OM002 in the Error Code field and select the REST service call-activity from the Node drop-down list. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__STEP_67C2A586CCA3406FA839CF8A203759E2"> 
+		  <span class="ph cmd">Drag and drop a User Activity,and connect the Error Handler event to it. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__STEP_F2B992BF31074A46AFA8041D903D92E9"> 
+		  <span class="ph cmd">Configure the User Activity event by selecting the page that must open or load for the user activity. 
+		  </span> 
+		</li>
+<li class="li step" id="GUID-075C0527-A2D7-4283-BB42-B8C5DEB359A9__STEP_74529E027DBB44B1B74EA3841FEC1D13"> 
+		  <span class="ph cmd">Click PUBLISH. 
+		  </span> 
+		</li>
+</ol>
+ 
+  </div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent Topic</strong> <a class="link" href="GUID-C98C879B-F48D-49FF-839C-C67795679164.html" title="An event is the smallest and most basic element in a business process or workflow. There are seven generic predefined events that you can use to in a workflow or a subflow. Start and stop are two events that must be present in a workflow or a subflow.">Events</a></div>
+</div>
+</div>
+</article></div></div></div><script src="static/body.js?q4HemM8O" type="text/javascript"></script></body></html>
